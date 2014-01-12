@@ -1973,7 +1973,11 @@ Should any need arise,please do give us a call.';
 		//Register default language English
 		require_once('vtlib/Vtiger/Language.php');
 		$vtlanguage = new Vtiger_Language();
-		$vtlanguage->register('en_us', 'US English', 'English', true, true, true);
+		// JFV - set Japanese language info into language table and set as default.
+		//$vtlanguage->register('en_us', 'US English', 'English', true, true, true);
+		$vtlanguage->register('en_us', 'US English', 'English', false, true, true);
+		$vtlanguage->register('ja_jp', 'Japanese ( 日本語　)', 'Japanese', true, true, true);
+		// JFV END
 
 		$this->initWebservices();
 
