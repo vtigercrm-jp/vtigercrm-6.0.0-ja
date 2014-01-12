@@ -73,7 +73,13 @@
 	<!--added this div for Temporarily -->
 {if $LISTVIEW_ENTIRES_COUNT eq '0'}
 	<div class="row-fluid">
+	{* JFV - remove LBL_NO for ja_jp *}
+	{if $smarty.session.authenticated_user_language eq 'ja_jp'}
+		<div class="emptyRecordsDiv">{vtranslate($MODULE, $MODULE)}{vtranslate('LBL_FOUND', $MODULE)}.</div>
+	{else}
 		<div class="emptyRecordsDiv">{vtranslate('LBL_NO', $MODULE)} {vtranslate($MODULE, $MODULE)} {vtranslate('LBL_FOUND', $MODULE)}.</div>
+	{/if}
+	{* JFV END *}
 	</div>
 {/if}
 </div>
