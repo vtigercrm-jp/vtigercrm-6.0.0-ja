@@ -407,7 +407,10 @@
 									<select name="currency_name" id="currency_name" placeholder="Base Currency" data-errormessage="Choose Base Currency" class="validate[required]" style="width:250px;">
 										<option value=""></option>
 										{foreach key=header item=currency from=$CURRENCIES}
-											{if $header eq 'USA, Dollars'}
+											{* JFV - set default selection of currency to japan yen *}
+											{* {if $header eq 'USA, Dollars'} *}
+											{if $header eq 'Japan, Yen'}
+											{* JFV END *}
 												<option value="{$header}" selected>{$header|@getTranslatedCurrencyString}({$currency.1})</option>
 											{else}
 												<option value="{$header}">{$header|@getTranslatedCurrencyString}({$currency.1})</option>
@@ -424,7 +427,10 @@
 									<select name="lang_name" id="lang_name" style="width:250px;" placeholder="Language" data-errormessage="Choose Language" class="validate[required]">
 										<option value=""></option>
 										{foreach key=header item=language from=$LANGUAGES}
-											{if $language eq 'US English'}
+											{* JFV - set default selection of language to japanese *}
+											{* {if $language eq 'US English'} *}
+											{if $language eq 'Japanese ( 日本語　)'}
+											{* JFV END *}
 												<option value="{$header}" selected>{$language|@getTranslatedString:$MODULE}</option>
 											{else}
 												<option value="{$header}">{$language|@getTranslatedString:$MODULE}</option>
@@ -438,7 +444,10 @@
 										<option value=""></option>
 										{foreach key=header item=time_zone from=$TIME_ZONES}
 											<option value="{$header}">{$time_zone|@getTranslatedString:$MODULE}</option>
-											{if $time_zone eq 'UTC'}
+											{* JFV - set default selection of timezone to asia/tokyo *}
+											{* {if $time_zone eq 'UTC'}*}
+											{if $time_zone eq 'Asia/Tokyo'}
+											{* JFV END *}
 												<option value="{$header}" selected>{$time_zone|@getTranslatedString:$MODULE}</option>
 											{else}
 												<option value="{$header}">{$time_zone|@getTranslatedString:$MODULE}</option>
@@ -452,7 +461,10 @@
 										<option value=""></option>
 										<option value="dd-mm-yyyy">dd-mm-yyyy</option>
 										<option value="mm-dd-yyyy" selected>mm-dd-yyyy</option>
-										<option value="yyyy-mm-dd">yyyy-mm-dd</option>
+										{* JFV - set default selection of date format to japan type *}
+										{* <option value="yyyy-mm-dd">yyyy-mm-dd</option> *}
+										<option value="yyyy-mm-dd" selected>yyyy-mm-dd</option>
+										{* JFV END *}
 									</select>
 									<div style="padding-top:10px;"></div>
 								</div>
