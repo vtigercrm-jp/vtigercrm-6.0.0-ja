@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<module>
+  <type>language</type>
+  <name>Język Polski</name>
+  <label>Język Polski</label>
+  <prefix>pl_pl</prefix>
+  <version>1.13</version>
+  <dependencies>
+    <vtiger_version>6.0.0rc</vtiger_version>
+	<vtiger_max_version>6.*</vtiger_max_version>
+  </dependencies>
+  <license>
+   <inline><![CDATA[
+*************************************************************************************
+* Terms & Conditions are placed on the: http://vtiger.com.pl                        *
+*************************************************************************************
+*  Language     : Polish                                                            *
+*  Vtiger       : 5.4.x                                                             *
+*  Version      : 1.13                                                              *
+*  Author       : OpenSaaS Sp. z o.o.                                               *
+*  Help/Email   : bok@opensaas.pl                                                   *
+*  Licence      : GPL                                                               *
+*  Website      : www.vtiger.com.pl, www.opensaas.pl                                *
+*************************************************************************************   
+]]></inline>
+  </license>
+</module>

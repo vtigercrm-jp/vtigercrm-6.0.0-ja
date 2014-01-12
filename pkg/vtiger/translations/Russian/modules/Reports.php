@@ -1,0 +1,126 @@
+<?php
+/*+**********************************************************************************
+ * The contents of this file are subject to the vtiger CRM Public License Version 1.0
+ * ("License"); You may not use this file except in compliance with the License
+ * The Original Code is:  vtiger CRM Open Source
+ * The Initial Developer of the Original Code is vtiger.
+ * Portions created by vtiger are Copyright (C) vtiger.
+ * All Rights Reserved.
+ ************************************************************************************/
+$languageStrings = array(
+	'Reports'                      => 'Отчеты'                , 
+	'SINGLE_Reports'               => 'Отчет'                  , 
+	'LBL_FOLDER_NOT_EMPTY'         => 'Folder is not empty'         , // TODO: Review
+	'LBL_MOVE_REPORT'              => 'Переместить Отчеты', // KEY 5.x: Move_Reports
+	'LBL_CUSTOMIZE'                => 'Изменить'            , // KEY 5.x: LBL_CUSTOMIZE_BUTTON
+	'LBL_REPORT_EXPORT_EXCEL'      => 'Export Excel'                , // TODO: Review
+	'LBL_REPORT_PRINT'             => 'Печать'                , // KEY 5.x: LNK_PRINT
+	'LBL_STEP_1'                   => 'Step 1'                      , // TODO: Review
+	'LBL_STEP_2'                   => 'Step 2'                      , // TODO: Review
+	'LBL_STEP_3'                   => 'Step 3'                      , // TODO: Review
+	'LBL_REPORT_DETAILS'           => 'Детали Отчета'   , 
+	'LBL_SELECT_COLUMNS'           => 'Выберите колонки', 
+	'LBL_FILTERS'                  => 'Фильтры'              , 
+	'LBL_FOLDERS'                  => 'Folders'                     , // TODO: Review
+	'LBL_ADD_NEW_FOLDER'           => 'Добавить новую Папку', // KEY 5.x: LBL_ADD_NEW_GROUP
+	'LBL_FOLDER_NAME'              => 'Folder Name'                 , // TODO: Review
+	'LBL_FOLDER_DESCRIPTION'       => 'Folder Description'          , // TODO: Review
+	'LBL_WRITE_YOUR_DESCRIPTION_HERE' => 'Enter Description'           , // TODO: Review
+	'LBL_DUPLICATES_EXIST'         => 'Report Name already Exists'  , // TODO: Review
+	'LBL_FOLDERS_LIST'             => 'Folders List'                , // TODO: Review
+	'LBL_DENIED_REPORTS'           => 'Denied Reports'              , // TODO: Review
+	'LBL_NO_OF_RECORDS'            => 'Number of records'           , // TODO: Review
+	'LBL_ADD_RECORD'               => 'Add Report'                  , // TODO: Review
+	'LBL_ADD_FOLDER'               => 'Add Folder'                  , // TODO: Review
+	'LBL_REPORT_DELETE_DENIED'     => 'Permission denied to delete the Report', // TODO: Review
+	'LBL_FOLDER_CAN_NOT_BE_DELETED' => 'This folder can not be deleted', // TODO: Review
+	'LBL_REPORTS_LIST'             => 'Reports list'                , // TODO: Review
+	'LBL_REPORT_NAME'              => 'Название Отчета', 
+	'LBL_REPORT_FOLDER'            => 'Папка для отчётов', // KEY 5.x: LBL_REP_FOLDER
+	'LBL_DESCRIPTION'              => 'Описание'            , 
+	'PRIMARY_MODULE'               => 'Primary Module'              , // TODO: Review
+	'LBL_SELECT_RELATED_MODULES'   => 'Select Related Modules'      , // TODO: Review
+	'LBL_MAX'                      => 'МАКС'                    , // KEY 5.x: MAX
+	'LBL_NEXT'                     => 'следующий'          , // KEY 5.x: LNK_LIST_NEXT
+	'LBL_REPORTS'                  => 'Reports List'                , // TODO: Review
+	'LBL_GROUP_BY'                 => 'Group By'                    , // TODO: Review
+	'LBL_SORT_ORDER'               => 'Sort Order'                  , // TODO: Review
+	'LBL_ASCENDING'                => 'По возрастанию' , // KEY 5.x: Ascending
+	'LBL_DESCENDING'               => 'По убыванию'       , // KEY 5.x: Descending
+	'LBL_CALCULATIONS'             => 'Рассчеты'            , 
+	'LBL_COLUMNS'                  => 'Колонки'              , 
+	'LBL_SUM_VALUE'                => 'Сумма'                  , // KEY 5.x: LBL_COLUMNS_SUM
+	'LBL_AVERAGE'                  => 'Среднее'              , // KEY 5.x: LBL_COLUMNS_AVERAGE
+	'LBL_LOWEST_VALUE'             => 'Наименьшая величина', // KEY 5.x: LBL_COLUMNS_LOW_VALUE
+	'LBL_HIGHEST_VALUE'            => 'Highest Value'               , // TODO: Review
+	'LBL_GENERATE_REPORT'          => 'Generate Report'             , // TODO: Review
+	'LBL_SUM'                      => 'СУМ'                      , // KEY 5.x: SUM
+	'LBL_AVG'                      => 'СРЕДН'                  , // KEY 5.x: AVG
+	'LBL_MIN'                      => 'МИН'                      , // KEY 5.x: MIN
+	'LBL_FIELD_NAMES'              => 'Названия Полей' , // KEY 5.x: Totals
+	'LBL_REPORT_CSV'               => 'Export CSV'                  , // TODO: Review
+	'LBL_VIEW_DETAILS'             => 'Просмотр Подробностей', 
+	'LBL_GENERATE_NOW'             => 'Сформировать'    , 
+	'Report Name'                  => 'Название Отчета', // KEY 5.x: LBL_REPORT_NAME
+	'Account and Contact Reports'  => 'Отчеты по Контактам и Контрагентам', 
+	'Lead Reports'                 => 'Отчеты по Обращениям', 
+	'Potential Reports'            => 'Отчеты по Сделкам', 
+	'Activity Reports'             => 'Отчеты по Деятельности', 
+	'HelpDesk Reports'             => 'Отчеты по Заявкам в Поддержку', 
+	'Product Reports'              => 'Отчеты по Товарам', 
+	'Quote Reports'                => 'Отчеты по Предложениям', 
+	'PurchaseOrder Reports'        => 'Отчеты по Заказам на Закупку', 
+	'SalesOrder Reports'           => 'Отчеты по Заказам на Продажу', 
+	'Invoice Reports'              => 'Отчеты по Счетам', 
+	'Campaign Reports'             => 'Отчеты по Кампаниям', 
+	'Contacts by Accounts'         => 'Контакты по Контрагентам', 
+	'Contacts without Accounts'    => 'Контакты без Контрагентов', 
+	'Contacts by Potentials'       => 'Контакты по Сделкам', 
+	'Contacts related to Accounts' => 'Контакты, относящиеся к Контрагентам', 
+	'Contacts not related to Accounts' => 'Контакты, не относящиеся к Контрагентам', 
+	'Contacts related to Potentials' => 'Контакты относящиеся к Сделкам', 
+	'Lead by Source'               => 'Обращения по Источникам', 
+	'Lead Status Report'           => 'Отчет по Статусу Обращения', 
+	'Potential Pipeline'           => 'Конвейер Сделок', 
+	'Closed Potentials'            => 'Закрытые Сделки', 
+	'Potential that have Won'      => 'Сделки с Выигрышем', 
+	'Tickets by Products'          => 'Заявки по Товарам', 
+	'Tickets by Priority'          => 'Заявки по Приоритетам', 
+	'Open Tickets'                 => 'Открытые Заявки', 
+	'Tickets related to Products'  => 'Заявки, относящиеся к Товарам', 
+	'Tickets that are Open'        => 'Открытые Заявки', 
+	'Product Details'              => 'Информация о Товаре', 
+	'Products by Contacts'         => 'Товары по Контактам', 
+	'Product Detailed Report'      => 'Детальный отчет по Товарам', 
+	'Products related to Contacts' => 'Товары относящиеся к Контактам', 
+	'Open Quotes'                  => 'Открытые Предложения', 
+	'Quotes Detailed Report'       => 'Детальный Отчет Запросов', 
+	'Quotes that are Open'         => 'Открытые Запросы', 
+	'PurchaseOrder by Contacts'    => 'Заказы на Закупку по Контактам', 
+	'PurchaseOrder Detailed Report' => 'Детальный отчет по Заказам на Закупку', 
+	'PurchaseOrder related to Contacts' => 'Заказы на Закупку, относящиеся к Контактам', 
+	'Invoice Detailed Report'      => 'Детальный Отчет по Счетам', 
+	'Last Month Activities'        => 'Деятельность за прошлый месяц', 
+	'This Month Activities'        => 'Деятельность за этот месяц', 
+	'Campaign Expectations and Actuals' => 'Ожидания и Факты по Кампаниям', 
+	'SalesOrder Detailed Report'   => 'Детальный Отчет по Заказам на Продажу', 
+	'Email Reports'                => 'Email Reports'               , // TODO: Review
+	'Contacts Email Report'        => 'Contacts Email Report'       , // TODO: Review
+	'Accounts Email Report'        => 'Organizations Email Report'  , // TODO: Review
+	'Leads Email Report'           => 'Leads Email Report'          , // TODO: Review
+	'Vendors Email Report'         => 'Vendors Email Report'        , // TODO: Review
+	'Emails sent to Contacts'      => 'Emails sent to Contacts'     , // TODO: Review
+	'Emails sent to Organizations' => 'Emails sent to Organizations', // TODO: Review
+	'Emails sent to Leads'         => 'Emails sent to Leads'        , // TODO: Review
+	'Emails sent to Vendors'       => 'Emails sent to Vendors'      , // TODO: Review
+	'LBL_PRINT_REPORT'             => 'Напечатать Отчет', 
+	'LBL_RECORDS'                  => 'Записи'                , 
+	'LBL_LIMIT_EXCEEDED'           => 'Only 1000 + records are displayed. Use CSV or Excel Export to see all the records', // TODO: Review
+	'LBL_TOP'                      => 'Top'                         , // TODO: Review
+	'LBL_ALL_REPORTS'              => 'All Reports'                 , // TODO: Review
+	'LBL_CALCULATION_CONVERSION_MESSAGE' => 'Calculation are based on the base currency of your CRM', // TODO: Review
+);
+$jsLanguageStrings = array(
+	'JS_DUPLICATE_RECORD'          => 'Duplicate Report'            , // TODO: Review
+	'JS_CALCULATION_LINE_ITEM_FIELDS_SELECTION_LIMITATION' => 'Limitation: Line Item fields(List Price, Discount & Quantity) can only be used when other calculation fields are not selected.', // TODO: Review
+);
