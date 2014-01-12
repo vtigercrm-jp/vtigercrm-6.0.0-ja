@@ -40,7 +40,11 @@ class Install_Index_view extends Vtiger_View_Controller {
 		parent::preProcess($request);
 		$viewer = $this->getViewer($request);
 		$moduleName = $request->getModule();
-		$defaultLanguage = ($request->get('lang'))?$request->get('lang'):'en_us';
+		// JFV - change installation langauge to jp
+		//$defaultLanguage = ($request->get('lang'))?$request->get('lang'):'en_us';
+		$jfv_languageForInstallation = 'ja_jp';
+		$defaultLanguage = ($request->get('lang'))?$request->get('lang'):$jfv_languageForInstallation;
+		// JFV END
 		vglobal('default_language', $defaultLanguage);
 
 		define('INSTALLATION_MODE', true);
@@ -92,6 +96,9 @@ class Install_Index_view extends Vtiger_View_Controller {
 		require_once 'modules/Users/UserTimeZonesArray.php';
 		$timeZone = new UserTimeZones();
 		$viewer->assign('TIMEZONES', $timeZone->userTimeZones());
+		// JFV - pass default language to set default ui selection
+		$viewer->assign('JFV_DEFAULT_LANGUAGE', vglobal('default_language'));
+		// JFV END
 		$viewer->view('Step4.tpl', $moduleName);
 	}
 
@@ -158,7 +165,10 @@ class Install_Index_view extends Vtiger_View_Controller {
 		global $adb;
 		$adb->resetSettings($configParams['db_type'], $configParams['db_hostname'], $configParams['db_name'],
 							$configParams['db_username'], $configParams['db_password']);
-
+		// JFV - import from svn13991 to avoid garbled chars inserted into db
+		$adb->query('SET NAMES utf8');
+		// JFV END
+		
 
 		// Initialize and set up tables
 		Install_InitSchema_Model::initialize();
