@@ -6,20 +6,23 @@
  * The Initial Developer of the Original Code is vtiger.
  * Portions created by vtiger are Copyright (C) vtiger.
  * All Rights Reserved.
+ * Translated by ABOnline solutions - http://www.abo-s.com/
+ * Boris CLEMENT
+ * December 2013    
  ************************************************************************************/
 $languageStrings = array(
-	'LBL_ADD_RECORD'               => 'New Configuration'           , // TODO: Review
-	'SMSNotifier'                  => 'SMS Provider Configuration'  , // TODO: Review
-	'LBL_ADD_CONFIGURATION'        => 'New Configuration'           , // TODO: Review
-	'LBL_EDIT_CONFIGURATION'       => 'Edit Configuration'          , // TODO: Review
-	'LBL_SELECT_ONE'               => 'Select One'                  , // TODO: Review
-	'providertype'                 => 'Provider'                    , // TODO: Review
-	'isactive'                     => 'Active'                      , // TODO: Review
-	'username'                     => 'User Name'                   , // TODO: Review
-	'password'                     => 'Password'                    , // TODO: Review
+	'LBL_ADD_RECORD'               => 'Ajouter Configuration'           , 
+	'SMSNotifier'                  => 'Configuration du fournisseur SMS'  , 
+	'LBL_ADD_CONFIGURATION'        => 'Ajouter Configuration'           , 
+	'LBL_EDIT_CONFIGURATION'       => 'Modifier Configuration'          , 
+	'LBL_SELECT_ONE'               => 'Choisir un'                  , 
+	'providertype'                 => 'Fournisseur'                    , 
+	'isactive'                     => 'Actif'                      , 
+	'username'                     => 'Nom d\'utilisateur'                   , 
+	'password'                     => 'Mot de passe'                    , 
 );
 $jsLanguageStrings = array(
-	'LBL_DELETE_CONFIRMATION'      => 'Are you sure, you want to delete this SMSNotifier Configuration', // TODO: Review
-	'JS_RECORD_DELETED_SUCCESSFULLY' => 'SMS Provider Deleted Successfully', // TODO: Review
-	'JS_CONFIGURATION_SAVED'       => 'SMS Provider Configurations saved', // TODO: Review
+	'LBL_DELETE_CONFIRMATION'      => 'Confirmer la suppression ?', 
+	'JS_RECORD_DELETED_SUCCESSFULLY' => 'Fournisseur SMS supprimée', 
+	'JS_CONFIGURATION_SAVED'       => 'Fournisseur SMS enregistrée', 
 );

@@ -9,17 +9,21 @@
  *************************************************************************************/
 $languageStrings = array(
 	// Basic Strings
-	'SINGLE_ProjectMilestone' => 'Etap Projektu',
-	'LBL_ADD_RECORD' => 'Dodaj Etap Projektu',
-	'LBL_RECORDS_LIST' => 'Lista Etapów Projektu',
-	'LBL_RECORD_SUMMARY' => 'Podsumowanie Etap Projektu',
+	'SINGLE_ProjectMilestone' => 'Etap projektu',
+	'LBL_ADD_RECORD' => 'Dodaj rekord',
+	'LBL_RECORDS_LIST' => 'Lista rekordów',
 
 	// Blocks
-	'LBL_PROJECT_MILESTONE_INFORMATION' => 'Informacje podstawowe',
+	'LBL_PROJECT_MILESTONE_INFORMATION' => 'Szczegóły etapu',
 	
 	//Field Labels
 	'Project Milestone Name' => 'Nazwa etapu',
-	'Milestone Date' => 'Data rozpoczęcia etapu',
+	'Milestone Date' => 'Termin etapu',
 	'Project Milestone No' => 'Numer etapu',
 	
+	//Opensaas
+	'Related to'=>'Projekt',
+	'description' => 'Opis',
+       
+    
 );

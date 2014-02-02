@@ -10,15 +10,15 @@
 $languageStrings = array(
 	
 	'Asterisk' => 'Asterisk',
-	'PBXManager' => 'Połączenia Telefoniczne',
-	'SINGLE_PBXManager' => 'Połączenie Telefoniczne',
+	'PBXManager' => 'PBX Manager',
+	'SINGLE_PBXManager' => 'PBX Manager',
 	
 	//Blocks
 	'LBL_CALL_INFORMATION' => 'Szczegóły połączenia',
 	
 	//Field Labels
-	'Call From'=>'Połączenia OD',
-	'Call To'=>'Połączenia DO',
-	'Time Of Call'=>'Czas Połączeń',
-	'PBXManager ID' => 'ID Połączenia'
+	'Call From'=>'Połączenie od',
+	'Call To'=>'Połączenie do',
+	'Time Of Call'=>'Czas połączenia',
+	'PBXManager ID'=>'PBX Manager ID',
 );

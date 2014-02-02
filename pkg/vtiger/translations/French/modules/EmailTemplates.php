@@ -6,19 +6,22 @@
  * The Initial Developer of the Original Code is vtiger.
  * Portions created by vtiger are Copyright (C) vtiger.
  * All Rights Reserved.
+ * Translated by ABOnline solutions - http://www.abo-s.com/
+ * Boris CLEMENT
+ * December 2013   
  *************************************************************************************/
 $languageStrings = array(
-	'LBL_ADD_RECORD' => 'Add Email Template',
-	'SINGLE_EmailTemplates' => 'Email Template',
-	'LBL_EMAIL_TEMPLATES'=> 'Email Templates',
-	'LBL_EMAIL_TEMPLATE' => 'Email Template',
+	'LBL_ADD_RECORD' => 'Ajouter un modèle de mail',
+	'SINGLE_EmailTemplates' => 'modèle de mail',
+	'LBL_EMAIL_TEMPLATES'=> 'modèles de mail',
+	'LBL_EMAIL_TEMPLATE' => 'modèle de mail',
 	
-	'LBL_TEMPLATE_NAME' => 'Template name',
+	'LBL_TEMPLATE_NAME' => 'Nom du modèle',
 	'LBL_DESCRIPTION' => 'Description',
-	'LBL_SUBJECT' => 'Subject',
-	'LBL_GENERAL_FIELDS' => 'General Fields',
-	'LBL_SELECT_FIELD_TYPE' => 'Select Field Type',
+	'LBL_SUBJECT' => 'Sujet',
+	'LBL_GENERAL_FIELDS' => 'Champs principaux',
+	'LBL_SELECT_FIELD_TYPE' => 'Choisir le type de champ',
 	
-	'LBL_EMAIL_TEMPLATE_DESCRIPTION'=>'Manage templates for E-Mail module',
+	'LBL_EMAIL_TEMPLATE_DESCRIPTION'=>'Gérer les modèles de mail',
 	
 );

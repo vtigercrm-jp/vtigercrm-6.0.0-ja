@@ -6,12 +6,15 @@
  * The Initial Developer of the Original Code is vtiger.
  * Portions created by vtiger are Copyright (C) vtiger.
  * All Rights Reserved.
+ * Translated by ABOnline solutions - http://www.abo-s.com/
+ * Boris CLEMENT
+ * December 2013  
  ************************************************************************************/
 $languageStrings = array(
 	'SINGLE_Documents'             => 'Document'                    , 
-	'Documents'                    => 'Documents'                   , // TODO: Review
-	'LBL_ADD_RECORD'               => 'Add Document'                , 
-	'LBL_RECORDS_LIST'             => 'Documents List'              , 
+	'Documents'                    => 'Documents'                   , 
+	'LBL_ADD_RECORD'               => 'Ajouter document'                , 
+	'LBL_RECORDS_LIST'             => 'Liste des documents '              , 
 	'LBL_NOTE_INFORMATION'         => 'Information document'        , 
 	'LBL_FILE_INFORMATION'         => 'Information fichier'         , 
 	'LBL_DESCRIPTION'              => 'Description'                 , 
@@ -24,33 +27,33 @@ $languageStrings = array(
 	'Version'                      => 'Version'                     , 
 	'Active'                       => 'Actif'                       , 
 	'Download Count'               => 'Compteur de téléchargement', 
-	'Folder Name'                  => 'Répertoire'                 , 
+	'Folder Name'                  => 'Dossier'                 , 
 	'Document No'                  => 'Document N°'                , 
-	'Last Modified By'             => 'Last Modified By'            , 
-	'LBL_FOLDER_HAS_DOCUMENTS'     => 'Please move documents from folder before deleting', 
+	'Last Modified By'             => 'Modifié par'            , 
+	'LBL_FOLDER_HAS_DOCUMENTS'     => 'Veuillez déplacer les fichiers du dossier avant suppression', 
 	'LBL_DOWNLOAD_FILE'            => 'Télécharger le fichier'    , 
 	'LBL_CHECK_FILE_INTEGRITY'     => 'Contrôler l\'intégrité du fichier', 
 	'LBL_INTERNAL'                 => 'Interne'                     , 
 	'LBL_EXTERNAL'                 => 'Externe'                     , 
-	'LBL_MAX_UPLOAD_SIZE'          => 'Maximum upload size'         , 
+	'LBL_MAX_UPLOAD_SIZE'          => 'Taille max. du fichier'         , 
 	'LBL_MOVE'                     => 'Déplacer'                   , 
 	'LBL_ADD_FOLDER'               => 'Ajouter un dossier'          , 
-	'LBL_FOLDERS_LIST'             => 'Folders List'                , 
-	'LBL_FOLDERS'                  => 'Folders'                     , 
-	'LBL_DOCUMENTS_MOVED_SUCCESSFULLY' => 'Documents Moved Successfully', 
-	'LBL_DENIED_DOCUMENTS'         => 'Denied Documents'            , 
+	'LBL_FOLDERS_LIST'             => 'Liste des dossiers'                , 
+	'LBL_FOLDERS'                  => 'Dossiers'                     , 
+	'LBL_DOCUMENTS_MOVED_SUCCESSFULLY' => 'Documents déplacés!', 
+	'LBL_DENIED_DOCUMENTS'         => 'Documents innacessibles selon vos droits'            , 
 	'MB'                           => 'Mo'                          , 
 	'LBL_ADD_NEW_FOLDER'           => 'Ajouter un dossier'          , 
 	'LBL_FOLDER_NAME'              => 'Répertoire'                 , 
-	'LBL_FOLDER_DESCRIPTION'       => 'Folder Description'          , 
-	'LBL_FILE_AVAILABLE'           => 'File is available for download', 
-	'LBL_FILE_NOT_AVAILABLE'       => 'This Document is not available for Download', 
+	'LBL_FOLDER_DESCRIPTION'       => 'Description du dossir'          , 
+	'LBL_FILE_AVAILABLE'           => 'Fichier disponible au téléchargement', 
+	'LBL_FILE_NOT_AVAILABLE'       => 'Fichier non disponible au téléchargement', 
 );
 $jsLanguageStrings = array(
-	'JS_EXCEEDS_MAX_UPLOAD_SIZE'   => 'Exceeded maximum upload size', 
-	'JS_NEW_FOLDER'                => 'New Folder'                  , 
-	'JS_MOVE_DOCUMENTS'            => 'Move Documents'              , 
-	'JS_ARE_YOU_SURE_YOU_WANT_TO_MOVE_DOCUMENTS_TO' => 'Are you sure you want to move the file(s) to', 
-	'JS_FOLDER'                    => 'folder'                      , 
-	'JS_OPERATION_DENIED'          => 'Operation Denied'            , 
+	'JS_EXCEEDS_MAX_UPLOAD_SIZE'   => 'Taille max. du fichier attainte', 
+	'JS_NEW_FOLDER'                => 'Ajouter Dossier'                  , 
+	'JS_MOVE_DOCUMENTS'            => 'Déplacer Documents'              , 
+	'JS_ARE_YOU_SURE_YOU_WANT_TO_MOVE_DOCUMENTS_TO' => 'Confirmer le déplacment des fichiers vers ', 
+	'JS_FOLDER'                    => 'Dossier'                      , 
+	'JS_OPERATION_DENIED'          => 'Operation non autorisée'            , 
 );

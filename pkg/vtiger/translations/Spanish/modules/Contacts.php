@@ -12,7 +12,7 @@
  *  Version      : 6.0.0
  *  Created Date : 2012-10-25
  *  Author       : JPL TSolucio, S. L. Joe Bordes
- *  Last change  : 2013-05-03
+ *  Last change  : 2013-10-05
  *  Author       : JPL TSolucio, S. L. Joe Bordes
  ************************************************************************************/
 $languageStrings = array(
@@ -47,6 +47,10 @@ $languageStrings = array(
 	'Other Country'                => 'País (Envío)',
 	'Other PO Box'                 => 'Apdo de Correos (Envío)',
 	'Contact Image'                => 'Imagen del Contacto',
+	'Secondary Email' => 'Email (Alternativo)',
+	'Other Phone' => 'Teléfono (Alternativo)',
+	'Email' => 'Email',
+	'Contact Id' => 'ID Contacto',
 	'Mr.'                          => 'Sr.',
 	'Ms.'                          => 'Sra.',
 	'Mrs.'                         => 'Srta.',
@@ -55,7 +59,6 @@ $languageStrings = array(
 	'User List'                    => 'Lista de Usuarios',
 	'LBL_COPY_OTHER_ADDRESS' => 'Copiar Dirección Alternativa',
 	'LBL_COPY_MAILING_ADDRESS' => 'Copiar Dirección Envío',
-	'Contact Id' => 'Contacto Id',
 );
 
 $jsLanguageStrings = array(

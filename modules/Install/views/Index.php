@@ -23,6 +23,7 @@ class Install_Index_view extends Vtiger_View_Controller {
 		$this->exposeMethod('Step4');
 		$this->exposeMethod('Step5');
 		$this->exposeMethod('Step6');
+		$this->exposeMethod('Step7');
 	}
 
 	public function preProcess(Vtiger_Request $request) {
@@ -40,11 +41,7 @@ class Install_Index_view extends Vtiger_View_Controller {
 		parent::preProcess($request);
 		$viewer = $this->getViewer($request);
 		$moduleName = $request->getModule();
-		// JFV - change installation langauge to jp
-		//$defaultLanguage = ($request->get('lang'))?$request->get('lang'):'en_us';
-		$jfv_languageForInstallation = 'ja_jp';
-		$defaultLanguage = ($request->get('lang'))?$request->get('lang'):$jfv_languageForInstallation;
-		// JFV END
+		$defaultLanguage = ($request->get('lang'))?$request->get('lang'):'en_us';
 		vglobal('default_language', $defaultLanguage);
 
 		define('INSTALLATION_MODE', true);
@@ -96,9 +93,17 @@ class Install_Index_view extends Vtiger_View_Controller {
 		require_once 'modules/Users/UserTimeZonesArray.php';
 		$timeZone = new UserTimeZones();
 		$viewer->assign('TIMEZONES', $timeZone->userTimeZones());
-		// JFV - pass default language to set default ui selection
-		$viewer->assign('JFV_DEFAULT_LANGUAGE', vglobal('default_language'));
-		// JFV END
+
+		$defaultParameters = Install_Utils_Model::getDefaultPreInstallParameters();		
+		$viewer->assign('DB_HOSTNAME', $defaultParameters['db_hostname']);
+		$viewer->assign('DB_USERNAME', $defaultParameters['db_username']);
+		$viewer->assign('DB_PASSWORD', $defaultParameters['db_password']);			
+		$viewer->assign('DB_NAME', $defaultParameters['db_name']);
+		$viewer->assign('ADMIN_NAME', $defaultParameters['admin_name']);	
+		$viewer->assign('ADMIN_LASTNAME', $defaultParameters['admin_lastname']);	
+		$viewer->assign('ADMIN_PASSWORD', $defaultParameters['admin_password']);	
+		$viewer->assign('ADMIN_EMAIL', $defaultParameters['admin_email']);		
+						
 		$viewer->view('Step4.tpl', $moduleName);
 	}
 
@@ -147,8 +152,16 @@ class Install_Index_view extends Vtiger_View_Controller {
 		$viewer->assign('AUTH_KEY', $authKey);
 		$viewer->view('Step5.tpl', $moduleName);
 	}
-
+	
 	public function Step6(Vtiger_Request $request) {
+		$moduleName = $request->getModule();
+		$viewer = $this->getViewer($request);
+		
+		$viewer->assign('AUTH_KEY', $_SESSION['config_file_info']['authentication_key']);
+		$viewer->view('Step6.tpl', $moduleName);
+	}
+
+	public function Step7(Vtiger_Request $request) {
 		// Set favourable error reporting
 		error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED);
 
@@ -165,10 +178,7 @@ class Install_Index_view extends Vtiger_View_Controller {
 		global $adb;
 		$adb->resetSettings($configParams['db_type'], $configParams['db_hostname'], $configParams['db_name'],
 							$configParams['db_username'], $configParams['db_password']);
-		// JFV - import from svn13991 to avoid garbled chars inserted into db
 		$adb->query('SET NAMES utf8');
-		// JFV END
-		
 
 		// Initialize and set up tables
 		Install_InitSchema_Model::initialize();
@@ -182,7 +192,8 @@ class Install_Index_view extends Vtiger_View_Controller {
 		$viewer->assign('PASSWORD', $_SESSION['config_file_info']['password']);
 		$viewer->assign('APPUNIQUEKEY', $this->retrieveConfiguredAppUniqueKey());
 		$viewer->assign('CURRENT_VERSION', $_SESSION['vtiger_version']);
-		$viewer->view('Step6.tpl', $moduleName);
+		$viewer->assign('INDUSTRY', $request->get('industry'));
+		$viewer->view('Step7.tpl', $moduleName);
 	}
 
 	// Helper function as configuration file is still not loaded.

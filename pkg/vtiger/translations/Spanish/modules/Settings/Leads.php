@@ -11,7 +11,7 @@
  *  Version      : 6.0.0
  *  Created Date : 2013-05-10
  *  Author       : JPL TSolucio, S. L. Joe Bordes
- *  Last change  : 2013-05-10
+ *  Last change  : 2013-10-05
  *  Author       : JPL TSolucio, S. L. Joe Bordes
  *************************************************************************************/
 $languageStrings = array(
@@ -70,5 +70,6 @@ $jsLanguageStrings = array(
 	'JS_decimal' => 'Decimal',
 	'JS_percent' => 'Porcentaje',
 	'JS_skype' => 'Skype',
-	'JS_integer' => 'Integer',
+	'JS_None' => 'Ninguno',
+	'JS_integer' => 'Entero',
 );

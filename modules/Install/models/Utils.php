@@ -140,6 +140,39 @@ class Install_Utils_Model {
 
 		return $preInstallConfig;
 	}
+	
+	/**
+	 * Function that provides default configuration based on installer setup
+	 * @return <Array>
+	 */
+	function getDefaultPreInstallParameters() {
+		include 'config.db.php';
+		
+		$parameters = array(
+			'db_hostname' => '',
+			'db_username' => '',
+			'db_password' => '',
+			'db_name'     => '',
+			'admin_name'  => 'admin',
+			'admin_lastname'=> 'Administrator',
+			'admin_password'=>'',
+			'admin_email' => '',
+		);
+		
+		if (isset($dbconfig) && isset($vtconfig)) {
+			if (isset($dbconfig['db_server']) && $dbconfig['db_server'] != '_DBC_SERVER_') {
+				$parameters['db_hostname'] = $dbconfig['db_server'] . ':' . $dbconfig['db_port'];
+				$parameters['db_username'] = $dbconfig['db_username'];
+				$parameters['db_password'] = $dbconfig['db_password'];
+				$parameters['db_name']     = $dbconfig['db_name'];
+				
+				$parameters['admin_password'] = $vtconfig['adminPwd'];
+				$parameters['admin_email']    = $vtconfig['adminEmail'];
+			}
+		}
+		
+		return $parameters;
+	}
 
 	/**
 	 * Function returns gd library information

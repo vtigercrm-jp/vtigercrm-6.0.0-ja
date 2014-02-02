@@ -12,7 +12,7 @@
  *  Version      : 6.0.0
  *  Created Date : 2012-10-26
  *  Author       : JPL TSolucio, S. L. Joe Bordes
- *  Last change  : 2013-05-03
+ *  Last change  : 2013-10-05
  *  Author       : JPL TSolucio, S. L. Joe Bordes
  ************************************************************************************/
 $languageStrings = array(
@@ -28,6 +28,8 @@ $languageStrings = array(
 	'Probability'                  => 'Probabilidad',
 	'Campaign Source'              => 'Campaña Origen',
 	'Forecast Amount'              => 'Previsión de Ventas Cantidad',
+	'Related To' => 'Cuenta',
+	'Contact Name' => 'Contacto',
 	'Funnel'                       => 'Embudo de Ventas',
 	'Potentials by Stage'          => 'Oportunidades por Fase',
 	'Total Revenue'                => 'Ingresos por Comercial',

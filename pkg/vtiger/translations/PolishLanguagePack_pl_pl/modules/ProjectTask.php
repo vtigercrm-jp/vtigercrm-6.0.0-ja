@@ -9,11 +9,33 @@
  *************************************************************************************/
 $languageStrings = array(
 	// Basic Strings
-	'SINGLE_ProjectTask' => 'Zadanie Projektu',
-	'LBL_ADD_RECORD' => 'Dodaj Zadanie Projektu',
-	'LBL_RECORDS_LIST' => 'Lista Zadań Projektu',
-	'LBL_RECORD_SUMMARY' => 'Podsumowanie Zadania Projektu',
+	'SINGLE_ProjectTask' => 'Zadanie projektu',
+	'LBL_ADD_RECORD' => 'Dodaj rekord',
+	'LBL_RECORDS_LIST' => 'Lista rekordów',
 
 	// Blocks
-	'LBL_PROJECT_TASK_INFORMATION' => 'Informacje podstawowe',
+	'LBL_PROJECT_TASK_INFORMATION' => 'Szczegóły zadania',
+	'LBL_PROJECTS_LIST' => 'Lista projektów',
+	'LBL_TASKS_LIST' => 'Lista zadań',
+	
+	//Opensaas
+	'low' => 'Niski',
+	'high' => 'Wysoki',
+	'normal' => 'Normalny',
+	'description' => 'Opis',
+    'administrative' => 'Wewnętrzny',
+    'operative' => 'Zewnętrzny',
+    'other' => 'Wspólny',
+	'Open'=>'Otwarte',
+	'Completed'=>'Zakończone',
+	'Deferred'=>'Przełożone',
+	'Canceled '=>'Anulowano',
+	'Project Task Name'=>'Nazwa zadania projektowego',
+	'Project Task Number'=>'Numer zadania projektowego',
+	'Related to'=>'Projekt',
+	'Progress'=>'Realizacja',
+    'Worked Hours'=>'Przepracowany czas',
+    'Start Date'=>'Data rozpoczęcia',
+    'End Date'=>'Data zakończenia',
+	'Project Task No' => 'Numer zadania projektowego',
 );

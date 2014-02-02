@@ -9,66 +9,67 @@
  *************************************************************************************/
 $languageStrings = array(
 	// Basic Strings
-	'Leads' => 'Potencjalni Klienci',
-	'SINGLE_Leads' => 'Potencjalny Klient',
-	'LBL_RECORDS_LIST' => 'Lista Potencjalnych Klientów',
-	'LBL_ADD_RECORD' => 'Dodaj Potencjalnego Klienta',
-	'LBL_RECORD_SUMMARY' => 'Podsumowanie Potencjalnego Klienta',
+	'Leads' => 'Potencjalni klienci',
+	'SINGLE_Leads' => 'Potencjalny klient',
+	'LBL_RECORDS_LIST' => 'Lista rekordów',
+	'LBL_ADD_RECORD' => 'Dodaj rekord',
 
 	// Blocks
-	'LBL_LEAD_INFORMATION' => 'Informacje podstawowe',
+	'LBL_LEAD_INFORMATION' => 'Szczegóły potencjalnego klienta',
 
 	//Field Labels
-	'Lead No' => 'Numer Potencjalnego Klienta',
-	'Company' => 'Nazwa firmy',
-	'Designation' => 'Opis',
-	'Website' => 'Strona WWW',
+	'Lead No' => 'Numer potencjalnego klienta',
+	'Company' => 'Firma',
+	'Designation' => 'Stanowisko',
+	'Website' => 'Strona internetowa',
 	'Industry' => 'Branża',
-	'Lead Status' => 'Status Potencjalnego Klienta',
+	'Lead Status' => 'Status',
 	'No Of Employees' => 'Liczba pracowników',
+	'Phone' => 'Telefon podstawowy',
+	'Secondary Email' => 'Mail dodatkowy',
+	'Email' => 'Mail podstawowy',
 
 	//Added for Existing Picklist Entries
 
-	'--None--'=>'-- Brak --',
+	'--None--'=>'--Brak--',
 	'Mr.'=>'Pan',
-	'Ms.'=>'Pani',
-	'Mrs.'=>'Państwo',
-	'Dr.'=>'Dr.',
-	'Prof.'=>'Prof.',
+	'Ms.'=>'Panna',
+	'Mrs.'=>'Pani',
+	'Dr.'=>'dr', //Michał Zygmuntowicz
+	'Prof.'=>'prof.', //Michał Zygmuntowicz
 
 	//Lead Status Picklist values
 	'Attempted to Contact'=>'Zakwalifikowany do kontaktu',
-	'Cold'=>'Niezakwalifikowany do kontaktu',
+	'Cold'=>'Zimny',
 	'Contact in Future'=>'Kontakt w przyszłości',
 	'Contacted'=>'Nawiązano kontakt',
-	'Hot'=>'Zainteresowany',
-	'Junk Lead'=>'Nowy',
+	'Hot'=>'Gorący',
+	'Junk Lead'=>'Śmieciowy',
 	'Lost Lead'=>'Utracony',
 	'Not Contacted'=>'Brak kontaktu',
 	'Pre Qualified'=>'Wstępnie zakwalifikowany',
 	'Qualified'=>'Zakwalifikowany',
-	'Warm'=>'Ważny',
+	'Warm'=>'Ciepły',
 
 	// Mass Action
 	'LBL_CONVERT_LEAD' => 'Konwertuj na kontrahenta',
 
 	//Convert Lead
-	'LBL_TRANSFER_RELATED_RECORD' => 'Transfer powizanych rekordów do',
-	'LBL_CONVERT_LEAD_ERROR' => 'Aby konwertować Potencjalnego Klienta musiszą być aktywne moduły Kontrahenci i Kontakty.',
+	'LBL_TRANSFER_RELATED_RECORD' => 'Transferuj powiązane rekordy do',
+	'LBL_CONVERT_LEAD_ERROR' => 'Musisz wybrać albo kontakt albo kontrahentaa, by móc konwertować do kontrahenta',
 	'LBL_CONVERT_LEAD_ERROR_TITLE' => 'Moduły wyłączone',
-	'CANNOT_CONVERT' => 'Nie można przekonwertować',
-	'LBL_FOLLOWING_ARE_POSSIBLE_REASONS' => 'Poniżej może znajdować się jeden z możliwych powodów:',
-	'LBL_LEADS_FIELD_MAPPING_INCOMPLETE' => 'Wszystkie obowiązkowe pola nie są mapowane (Narzędzia konfiguracyjne > Zarządzanie modułami > Potencjalni Klienci > Mapowanie utworzony pół w Potencjalnych klientach)',
-	'LBL_MANDATORY_FIELDS_ARE_EMPTY' => 'Niektóre wartość z obowiązkowych pól są puste',
-	'LBL_LEADS_FIELD_MAPPING' => 'Potencjalni Klienci - niestandardowe mapowanie pól',
+	'CANNOT_CONVERT' => 'Nie można wykonać konwertowania',
+	'LBL_FOLLOWING_ARE_POSSIBLE_REASONS' => 'Możliwe przyczyny:',
+	'LBL_LEADS_FIELD_MAPPING_INCOMPLETE' => 'Mapowanie pól nie zostało ukończone, przejdź do: (Settings > Module Manager > Leads > Leads Field Mapping)',
+	'LBL_MANDATORY_FIELDS_ARE_EMPTY' => 'Wymagane pola są puste',
+	'LBL_LEADS_FIELD_MAPPING' => 'Mapowanie pól potencjalnego klienta',
 
 	//Leads Custom Field Mapping
-	'LBL_CUSTOM_FIELD_MAPPING'=> 'Edytuj mapowanie pól',
-	'LBL_WEBFORMS' => 'Konfiguracja formularzy WWW',
-	'LBL_LEAD_SOURCE' => 'Źródło pozyskania'
+	'LBL_CUSTOM_FIELD_MAPPING'=> 'Zarządzaj mapowaniem pól',
+	'LBL_WEBFORMS' => 'Zarządzaj formularzami',
 );
 $jsLanguageStrings = array(
-	'JS_SELECT_CONTACTS' => 'Wybierz Kontakty aby kontynuować',
-	'JS_SELECT_ORGANIZATION' => 'Wybierz Kontrahenta aby kontynuować',
-	'JS_SELECT_ORGANIZATION_OR_CONTACT_TO_CONVERT_LEAD' => 'Konwersja wymaga wybrania Kontaktu lub Kontrahenta'
+	'JS_SELECT_CONTACTS' => 'Zaznacz kontakt w celu kontynuowania',
+	'JS_SELECT_ORGANIZATION' => 'Zaznacz kontrahenta w celu kontynuowania',
+	'JS_SELECT_ORGANIZATION_OR_CONTACT_TO_CONVERT_LEAD' => 'Konwertowanie wymaga zaznaczenia kontaktu lub kontrahenta'
 );

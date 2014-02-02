@@ -11,24 +11,23 @@ $languageStrings = array(
 	'Faq' => 'Instrukcje',
 	'SINGLE_Faq' => 'Instrukcja',
 	'LBL_RECORDS_LIST' => 'Lista instrukcji',
-	'LBL_ADD_RECORD' => 'Dodaj instrukcje',
-	'LBL_RECORD_SUMMARY' => 'Podsumowanie instrukcji',
+	'LBL_ADD_RECORD' => 'Dodaj rekord',
 	
 	//Blocks
-	'LBL_FAQ_INFORMATION' => 'Informacje podstawowe',
+	'LBL_FAQ_INFORMATION' => 'Informacje dotyczące instrukcji',
 	'LBL_COMMENT_INFORMATION' =>  'Komentarze',
 	
 	//Fields
 	'Question'=>'Pytanie',
 	'Answer'=>'Odpowiedź',
 	'Comments'=>'Komentarze',
-	'Faq No' => 'Numer instrukcji',
+	'Faq No' => 'Numer',
 	
 	//Added for existing Picklist Entries
-	'General'=>'Weryfikacja',
+	'General'=>'Ogólny',
 	'Draft'=>'Szkic',
-	'Published'=>'Opublikowana',
-	'Obsolete'=>'Archiwalna',
+	'Published'=>'Opublikowany',
+	'Obsolete'=>'Zdezaktualizowany',
 
 	//EditView
 	'LBL_SOLUTION' => 'Rozwiązanie',

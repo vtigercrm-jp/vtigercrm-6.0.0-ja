@@ -200,7 +200,7 @@ class MailManager_Connector_Connector {
 	 * @param String $name - folder name
 	 */
 	function folderInstance($name) {
-		vimport('~~vtiger6/modules/MailManager/models/Folder.php');
+		vimport('~~modules/MailManager/models/Folder.php');
 		return new MailManager_Folder_Model($name);
 	}
 

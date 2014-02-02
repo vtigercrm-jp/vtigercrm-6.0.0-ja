@@ -58,13 +58,24 @@ class Install_InitSchema_Model {
 	 * Function upgrades the schema with changes post 540 version
 	 */
 	public static function upgrade() {
-		$migrateVersions = array('540' => '600RC');
+		$migrateVersions = Migration_Module_Model::getInstance()->getAllowedMigrationVersions();
 
 		define('VTIGER_UPGRADE', true);
-		foreach($migrateVersions as $oldVersion => $newVersion) {
-			$filename =  "modules/Migration/schema/".$oldVersion."_to_".$newVersion.".php";
-			if(is_file($filename)) {
-				include($filename);
+		$oldVersion = null;
+		foreach($migrateVersions as $migrateVersion) {
+			foreach($migrateVersion as $newVersion => $versionLabel) {
+				// Not ready?	
+				if ($oldVersion == null) {
+					$oldVersion = $newVersion;
+					break;
+				}
+				$oldVersion = str_replace(array('.', ' '), '', $oldVersion);
+				$newVersion = str_replace(array('.', ' '), '', $newVersion);
+				$filename =  "modules/Migration/schema/".$oldVersion."_to_".$newVersion.".php";
+				if(is_file($filename)) {
+					include($filename);
+				}
+				$oldVersion = $newVersion;
 			}
 		}
 	}

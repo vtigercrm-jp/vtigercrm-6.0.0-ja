@@ -6,14 +6,17 @@
  * The Initial Developer of the Original Code is vtiger.
  * Portions created by vtiger are Copyright (C) vtiger.
  * All Rights Reserved.
+ * Translated by ABOnline solutions - http://www.abo-s.com/
+ * Boris CLEMENT
+ * December 2013    
  ************************************************************************************/
 $languageStrings = array(
-	'PriceBooks'                   => 'Grille tarifaire'            , 
+	'PriceBooks'                   => 'Grilles tarifaires'            , 
 	'SINGLE_PriceBooks'            => 'Grille tarifaire'            , 
-	'LBL_ADD_RECORD'               => 'Add Price Book'              , 
-	'LBL_RECORDS_LIST'             => 'Price Books List'            , 
+	'LBL_ADD_RECORD'               => 'Ajouter une grille tarifaire'              , 
+	'LBL_RECORDS_LIST'             => 'Liste des grilles tarifaires'            , 
 	'LBL_PRICEBOOK_INFORMATION'    => 'Grille tarifaire'            , 
-	'LBL_EDIT_LIST_PRICE'          => 'Edit List Price'             , 
+	'LBL_EDIT_LIST_PRICE'          => 'Editer les tarifs'             , 
 	'Price Book Name'              => 'Objet'                       , 
 	'PriceBook No'                 => 'Grille tarifaire N°'        , 
 );

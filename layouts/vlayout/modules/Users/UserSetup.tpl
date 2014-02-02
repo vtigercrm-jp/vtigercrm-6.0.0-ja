@@ -59,13 +59,13 @@
 		<div class="container">
 			<div class="modal-backdrop"></div>
 			<form class="form" method="POST" action="index.php?module=Users&action=UserSetupSave">
-				<div class="modal" {if $IS_FIRST_USER}style="width: 700px;"{/if}>
+				<div class="modal" {if false && $IS_FIRST_USER}style="width: 700px;"{/if}> {* FirstUser information gather - paused *}
 					<div class="modal-header">
 						<h3>Almost there!</h3>
 					</div>
 					<div class="modal-body">
 						<div class="row">
-							{if $IS_FIRST_USER}
+							{if false && $IS_FIRST_USER} {* FirstUser information gather - paused *}
 							<div class="span4">
 								<label class="control-label"><strong>About Me</strong> <span class="muted">(We promise to keep this private)</span></label>
 								<div class="controls">
@@ -407,10 +407,7 @@
 									<select name="currency_name" id="currency_name" placeholder="Base Currency" data-errormessage="Choose Base Currency" class="validate[required]" style="width:250px;">
 										<option value=""></option>
 										{foreach key=header item=currency from=$CURRENCIES}
-											{* JFV - set default selection of currency to japan yen *}
-											{* {if $header eq 'USA, Dollars'} *}
-											{if $header eq 'Japan, Yen'}
-											{* JFV END *}
+											{if $header eq 'USA, Dollars'}
 												<option value="{$header}" selected>{$header|@getTranslatedCurrencyString}({$currency.1})</option>
 											{else}
 												<option value="{$header}">{$header|@getTranslatedCurrencyString}({$currency.1})</option>
@@ -427,10 +424,7 @@
 									<select name="lang_name" id="lang_name" style="width:250px;" placeholder="Language" data-errormessage="Choose Language" class="validate[required]">
 										<option value=""></option>
 										{foreach key=header item=language from=$LANGUAGES}
-											{* JFV - set default selection of language to japanese *}
-											{* {if $language eq 'US English'} *}
-											{if $language eq 'Japanese ( 日本語　)'}
-											{* JFV END *}
+											{if $language eq 'US English'}
 												<option value="{$header}" selected>{$language|@getTranslatedString:$MODULE}</option>
 											{else}
 												<option value="{$header}">{$language|@getTranslatedString:$MODULE}</option>
@@ -444,10 +438,7 @@
 										<option value=""></option>
 										{foreach key=header item=time_zone from=$TIME_ZONES}
 											<option value="{$header}">{$time_zone|@getTranslatedString:$MODULE}</option>
-											{* JFV - set default selection of timezone to asia/tokyo *}
-											{* {if $time_zone eq 'UTC'}*}
-											{if $time_zone eq 'Asia/Tokyo'}
-											{* JFV END *}
+											{if $time_zone eq 'UTC'}
 												<option value="{$header}" selected>{$time_zone|@getTranslatedString:$MODULE}</option>
 											{else}
 												<option value="{$header}">{$time_zone|@getTranslatedString:$MODULE}</option>
@@ -461,10 +452,7 @@
 										<option value=""></option>
 										<option value="dd-mm-yyyy">dd-mm-yyyy</option>
 										<option value="mm-dd-yyyy" selected>mm-dd-yyyy</option>
-										{* JFV - set default selection of date format to japan type *}
-										{* <option value="yyyy-mm-dd">yyyy-mm-dd</option> *}
-										<option value="yyyy-mm-dd" selected>yyyy-mm-dd</option>
-										{* JFV END *}
+										<option value="yyyy-mm-dd">yyyy-mm-dd</option>
 									</select>
 									<div style="padding-top:10px;"></div>
 								</div>

@@ -6,21 +6,24 @@
  * The Initial Developer of the Original Code is vtiger.
  * Portions created by vtiger are Copyright (C) vtiger.
  * All Rights Reserved.
+ * Translated by ABOnline solutions - http://www.abo-s.com/
+ * Boris CLEMENT
+ * December 2013     
  ************************************************************************************/
 $languageStrings = array(
 	'Products'                     => 'Produits'                    , 
 	'SINGLE_Products'              => 'Produit'                     , 
 	'LBL_ADD_RECORD'               => 'Ajouter un produit'          , 
-	'LBL_RECORDS_LIST'             => 'Products List'               , 
+	'LBL_RECORDS_LIST'             => 'Liste des Produits'               , 
 	'LBL_PRODUCT_INFORMATION'      => 'Informations'                , 
-	'LBL_IMAGE_INFORMATION'        => 'Commentaires image produit'  , 
+	'LBL_IMAGE_INFORMATION'        => 'Image produit'  , 
 	'LBL_STOCK_INFORMATION'        => 'Stock :'                     , 
 	'LBL_MORE_CURRENCIES'          => 'Plus de devises'             , 
 	'LBL_PRICES'                   => 'Prix des produits'           , 
 	'LBL_PRICE'                    => 'Prix'                        , 
 	'LBL_RESET_PRICE'              => 'Prix remisé'                , 
 	'LBL_RESET'                    => 'Remise'                      , 
-	'LBL_ADD_TO_PRICEBOOKS'        => 'Add to PriceBooks'           , 
+	'LBL_ADD_TO_PRICEBOOKS'        => 'Ajouter à la grille tarifaire'           , 
 	'Product No'                   => 'Produit N°'                 , 
 	'Part Number'                  => 'Ref'                         , 
 	'Product Active'               => 'Actif'                       , 
@@ -71,5 +74,5 @@ $languageStrings = array(
 	'Sheet'                        => 'Fiche'                       , 
 	'Spiral Binder'                => 'Cahier à spiral'            , 
 	'Sq Ft'                        => 'm²'                         , 
-	'LBL_CONVERSION_RATE'          => 'Conversion Rate'             , // TODO: Review
+	'LBL_CONVERSION_RATE'          => 'Taux de conversion'             , // TODO: Review
 );

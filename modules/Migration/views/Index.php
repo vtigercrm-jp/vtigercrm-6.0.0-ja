@@ -82,10 +82,12 @@ class Migration_Index_View extends Vtiger_Basic_View {
 		$getDBVersion = str_replace(array('.', ' '),'', $moduleModel->getDBVersion());
 		$getLatestSourceVersion = str_replace(array('.', ' '),'', $moduleModel->getLatestSourceVersion());
 		$migrateVersions = array();
-		foreach($getAllowedMigrationVersions as $version => $label) {
-			if($version == $getDBVersion || $reach == 1) {
-				$reach = 1;
-				$migrateVersions[] = $version;
+		foreach($getAllowedMigrationVersions as $getAllowedMigrationVersion) {
+			foreach($getAllowedMigrationVersion as $version => $label) {
+				if($version == $getDBVersion || $reach == 1) {
+					$reach = 1;
+					$migrateVersions[] = $version;
+				}
 			}
 		}
 		$migrateVersions[] = $getLatestSourceVersion;

@@ -12,7 +12,7 @@
  *  Version      : 6.0.0
  *  Created Date : 2012-10-26
  *  Author       : JPL TSolucio, S. L. Joe Bordes
- *  Last change  : 2013-05-03
+ *  Last change  : 2013-07-14
  *  Author       : JPL TSolucio, S. L. Joe Bordes
  ************************************************************************************/
 $languageStrings = array(
@@ -26,6 +26,8 @@ $languageStrings = array(
 	'Vendor No'                    => 'Número Proveedor',
 	'Website'                      => 'Página Web',
 	'GL Account'                   => 'Cuenta Contable',
+	'Phone' => 'Teléfono',
+	'Email' => 'Email',
 	'300-Sales-Software'           => '300-Ventas-Software',
 	'301-Sales-Hardware'           => '301-Ventas-Hardware',
 	'302-Rental-Income'            => '302-Ingreso-Alquiler',

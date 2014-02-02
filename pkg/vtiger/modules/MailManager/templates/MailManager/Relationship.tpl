@@ -42,7 +42,7 @@
 			<input type="radio" name="_mlinkto" value="{$RECORD.id}" style="align: absmiddle;">
 		</td>
 		<td align=left>
-			<a target="_blank" href="vtiger6/index.php?module={$MODULE}&view=Detail&record={$RECORD.id}">{$RECORD.label|textlength_check}</a>
+			<a target="_blank" href="index.php?module={$MODULE}&view=Detail&record={$RECORD.id}">{$RECORD.label|textlength_check}</a>
 		</td>
 		<td align=right>
 			{assign var=RECORD_MODNAME value=$MODULES.$MODULE.name}

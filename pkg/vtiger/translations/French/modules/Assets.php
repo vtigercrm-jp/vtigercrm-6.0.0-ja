@@ -6,11 +6,14 @@
  * The Initial Developer of the Original Code is vtiger.
  * Portions created by vtiger are Copyright (C) vtiger.
  * All Rights Reserved.
+ * Translated by ABOnline solutions - http://www.abo-s.com/
+ * Boris CLEMENT
+ * December 2013 
  ************************************************************************************/
 $languageStrings = array(
 	'SINGLE_Assets'                => 'Liaison'                     , 
-	'LBL_ADD_RECORD'               => 'Add Assets'                  , 
-	'LBL_RECORDS_LIST'             => 'Assets List'                 , 
+	'LBL_ADD_RECORD'               => 'Ajouter Liaison'                  , 
+	'LBL_RECORDS_LIST'             => 'Liste des liaisons'                 , 
 	'LBL_ASSET_INFORMATION'        => 'Information de liaison'      , 
 	'Asset No'                     => 'Liaison N°'                 , 
 	'Serial Number'                => 'Numéro de série'           , 

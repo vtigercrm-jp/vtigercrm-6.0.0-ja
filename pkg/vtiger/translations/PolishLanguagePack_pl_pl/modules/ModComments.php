@@ -10,19 +10,18 @@
 $languageStrings = array(
 	// Basic Strings
 	'SINGLE_ModComments' => 'Komentarz',
-	'LBL_RECORDS_LIST' => 'Lista Komentarzy',
-	'LBL_RECORD_SUMMARY' => 'Podsumowanie Komentarza',
+	'LBL_RECORDS_LIST' => 'Lista komentarzy',
 
 	// Blocks
 	'LBL_MODCOMMENTS_INFORMATION' => 'Komentarze',
-	'LBL_OTHER_INFORMATION' => 'Pozostałe Informacje',
+	'LBL_OTHER_INFORMATION' => 'Dodatkowe informacje',
 
-	'LBL_ADDING_COMMENT' => 'Dodaj komentarz',
-	'LBL_WRITE_YOUR_COMMENT_HERE' => 'Tutaj wpisz treść komentarza',
+	'LBL_ADDING_COMMENT' => 'Dodano komentarz',
+	'LBL_WRITE_YOUR_COMMENT_HERE' => 'Wpisz komentarz tutaj',
 	
 	//Field Labels
 	'Comment' => 'Komentarz',
-	'Creator' => 'Utworzył',
+	'Creator' => 'Kreator',
 	'Related To Comments' => 'Powiązany z',
 	
 );

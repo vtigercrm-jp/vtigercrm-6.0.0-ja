@@ -6,12 +6,15 @@
  * The Initial Developer of the Original Code is vtiger.
  * Portions created by vtiger are Copyright (C) vtiger.
  * All Rights Reserved.
+ * Translated by ABOnline solutions - http://www.abo-s.com/
+ * Boris CLEMENT
+ * December 2013    
  ************************************************************************************/
 $languageStrings = array(
 	'Asterisk'                     => 'Asterisk'                    , 
 	'PBXManager'                   => 'Administration du PBX'       , 
 	'SINGLE_PBXManager'            => 'Administration du PBX'       , 
-	'LBL_CALL_INFORMATION'         => 'Call Details'                , 
+	'LBL_CALL_INFORMATION'         => 'Détails de l\'appel'                , 
 	'Call From'                    => 'Appel entrant de'            , 
 	'Call To'                      => 'Appel sortant vers'          , 
 	'Time Of Call'                 => 'Date et heure de l\'appel'   , 

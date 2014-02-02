@@ -12,7 +12,7 @@
  *  Version      : 6.0.0
  *  Created Date : 2012-10-27
  *  Author       : JPL TSolucio, S. L. Joe Bordes
- *  Last change  : 2013-05-11
+ *  Last change  : 2013-11-10
  *  Author       : JPL TSolucio, S. L. Joe Bordes
  ************************************************************************************/
 $languageStrings = array(
@@ -61,7 +61,6 @@ $languageStrings = array(
 	'LBL_PROFILE_TO_BE_DELETED'    => 'Perfil a Borrar',
 	'INTERNAL_MAIL_COMPOSER'       => 'Cliente de Email Interno',
 	'Asterisk Extension'           => 'Extensión Asterisk',
-	'Reminder Interval'            => 'Intervalo de Recordatorio',
 	'Webservice Access Key'        => 'Clave de acceso',
 	'Language'                     => 'Idioma',
 	'Theme'                        => 'Apariencia',
@@ -85,6 +84,17 @@ $languageStrings = array(
 	'LBL_CHANGE_PASSWORD' => 'Cambiar Contraseña',
 	'LBL_NEW_PASSWORD' => 'Nueva Contraseña',
 	'LBL_CONFIRM_PASSWORD' => 'Confirmar Contraseña',
+
+	//Login strings
+	'LBL_TO_CRM' => 'Acceder a Vtiger CRM',
+	'LBL_INVALID_USER_OR_PASSWORD' => 'Nombre de usuario o contraseña inválido.',
+	'LBL_INVALID_USER_OR_EMAIL' => 'Nombre de usuario o email inválido.',
+	'LBL_EMAIL_SEND' => 'Hemos enviado un email para recuperar tu contraseña.',
+	'ForgotPassword' => 'Recuperar Contraseña',
+	'LBL_CONNECT_WITH_US' => 'Conectar con nosotros',
+	'LBL_GET_MORE' => 'Obtén más de Vtiger',
+	'LBL_TRANSFER_RECORDS_TO_USER' => 'Transferir registros al usuario',
+	'LBL_USER_TO_BE_DELETED' => 'Usuario a eliminar',
 
 	'Kwajalein'                    => '(UTC-12:00) International Date Line West',
 	'Pacific/Midway'               => '(UTC-11:00) Coordinated Universal Time-11',

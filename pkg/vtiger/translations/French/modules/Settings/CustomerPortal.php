@@ -6,21 +6,24 @@
  * The Initial Developer of the Original Code is vtiger.
  * Portions created by vtiger are Copyright (C) vtiger.
  * All Rights Reserved.
+ * Translated by ABOnline solutions - http://www.abo-s.com/
+ * Boris CLEMENT
+ * December 2013     
  ************************************************************************************/
 $languageStrings = array(
-	'CustomerPortal'               => 'Customer Portal'             , // TODO: Review
-	'LBL_PORTAL_DESCRIPTION'       => 'Setup Privileges of Portal User', // TODO: Review
-	'LBL_PRIVILEGES'               => 'Privileges'                  , // TODO: Review
-	'LBL_DEFAULT_ASSIGNEE'         => 'Default Assignee'            , // TODO: Review
-	'LBL_PORTAL_URL'               => 'Portal Url'                  , // TODO: Review
-	'LBL_MODULE_NAME'              => 'Module Name'                 , // TODO: Review
-	'LBL_ENABLE_MODULE'            => 'Enable Module'               , // TODO: Review
-	'LBL_VIEW_ALL_RECORDS'         => 'See Records across Organization', // TODO: Review
-	'LBL_PREVILEGES_MESSAGE'       => 'This User\'s privileges will be applied to the Portal User.', // TODO: Review
-	'LBL_DEFAULT_ASSIGNEE_MESSAGE' => 'Tickets will be Assigned to the selected Assignee by the default Group/User from the Customer Portal.', // TODO: Review
-	'LBL_PORTAL_URL_MESSAGE'       => 'This is URL for the Portal where your contacts can login to submit/track tickets, access knowledge base and do more. Contacts will be sent the login details when Portal access is enabled from Contact details page.', // TODO: Review
-	'LBL_DRAG_AND_DROP_MESSAGE'    => 'Drag and Drop modules to reorder in the Customer Portal', // TODO: Review
+	'CustomerPortal'               => 'Portail Client'             , 
+	'LBL_PORTAL_DESCRIPTION'       => 'Gérer les autorisations du portail client.', 
+	'LBL_PRIVILEGES'               => 'Privilèges'                  , 
+	'LBL_DEFAULT_ASSIGNEE'         => 'Assignation par défaut'            , 
+	'LBL_PORTAL_URL'               => 'Url du portail'                  , 
+	'LBL_MODULE_NAME'              => 'Nom du Module'                 , 
+	'LBL_ENABLE_MODULE'            => 'Module actif.'               , 
+	'LBL_VIEW_ALL_RECORDS'         => 'Afficher les enregistrements liés au compte', 
+	'LBL_PREVILEGES_MESSAGE'       => 'Les privilèges seront appliqués àl\'utilisateur du portail.', 
+	'LBL_DEFAULT_ASSIGNEE_MESSAGE' => 'Les tickets déposés depusi le portail client seront assignés à l\'utilisateur sélectionné.', 
+	'LBL_PORTAL_URL_MESSAGE'       => 'C\'est l\' URL du portail ou les contacts se connectent pour déposer les tickets, consulter les FAQS et plus... Les accès au portail client sont envoyés par email quand la case à cocher "Accès portail client" est coché dans la fiche contact.', 
+	'LBL_DRAG_AND_DROP_MESSAGE'    => 'Glisser / déposer les modules pour réorganiser les onglets du portail client', 
 );
 $jsLanguageStrings = array(
-	'JS_PORTAL_INFO_SAVED'         => 'Customer Portal settings saved', // TODO: Review
+	'JS_PORTAL_INFO_SAVED'         => 'Réglages du Portail Client sauvé', 
 );

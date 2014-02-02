@@ -9,17 +9,17 @@
  *************************************************************************************/
 $languageStrings = array(
 	// Home Page Components
-	'ALVT' => 'Najważniejsi Kontrahenci',
-	'PLVT' => 'Najważniejsze szanse sprzedaży',
-	'QLTQ' => 'Najważniejsze oferty',
+	'ALVT' => 'Najlepszi kontrahenci',
+	'PLVT' => 'Najlepsze szanse sprzedaży',
+	'QLTQ' => 'Najlepsze oferty',
 	'CVLVT' => 'Tablica',
-	'HLT' => 'Najważniejsze zgłoszenia',
+	'HLT' => 'Najważniejsze zgłoszenia serwisowe',
 	'GRT' => 'Przydzielone do mojej grupy',
-	'OLTSO' => 'Najważniejsze zamówienia od Klientów',
-	'ILTI' => 'Najważniejsze faktury',
-	'HDB' => 'Wykres podsumowujący',
-	'OLTPO' => 'Najważniejsze zamówienia do dostawców',
+	'OLTSO' => 'Najlepsze zamówienia',
+	'ILTI' => 'Najlepsze faktury',
+	'HDB' => 'Wykresy strony startowej',
+	'OLTPO' => 'Najlepsze zamówienia do dostawców',
 	'LTFAQ' => 'Moje ostatnie instrukcje',
-	'UA' => 'Nadchodzące wydarzenia',
-	'PA' => 'Oczekujące wydarzenia',
+	'UA' => 'Nadchodzące zdarzenia',
+	'PA' => 'Oczekujące zdarzenia',
 );

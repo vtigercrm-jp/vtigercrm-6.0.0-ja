@@ -372,7 +372,7 @@ class Vtiger_Tools_Console_LanguageController extends Vtiger_Tools_Console_Contr
 
 		$languageInformation = array();
 		do {
-			$languageInformation['prefix'] = strtolower($this->prompt("Enter language prefix: ", self::PROMPT_NAME));
+			$languageInformation['prefix'] = strtolower($this->prompt("Enter (languagecode_countrycode): ", self::PROMPT_NAME));
 			if (!file_exists( 'languages/' . $languageInformation['prefix'])) {
 				break;
 			}

@@ -12,7 +12,7 @@
  *  Version      : 6.0.0
  *  Created Date : 2012-10-27
  *  Author       : JPL TSolucio, S. L. Joe Bordes
- *  Last change  : 2013-05-03
+ *  Last change  : 2013-10-05
  *  Author       : JPL TSolucio, S. L. Joe Bordes
  ************************************************************************************/
 $languageStrings = array(
@@ -80,4 +80,5 @@ $languageStrings = array(
 	'Spiral Binder'                => 'Cuaderno espiral',
 	'Sq Ft'                        => 'm<sup>2</sup>',
 	'LBL_CONVERSION_RATE' => 'Tasa Conversión',
+	'LBL_NOT_A_BUNDLE' => 'No es Compuesto',
 );

@@ -6,19 +6,22 @@
  * The Initial Developer of the Original Code is vtiger.
  * Portions created by vtiger are Copyright (C) vtiger.
  * All Rights Reserved.
+ * Translated by ABOnline solutions - http://www.abo-s.com/
+ * Boris CLEMENT
+ * December 2013    
  ************************************************************************************/
 $languageStrings = array(
-	'LBL_ADD_RECORD'               => 'Add Currency'                , // TODO: Review
-	'LBL_EDIT_CURRENCY'            => 'Edit Currency'               , // TODO: Review
-	'LBL_ADD_NEW_CURRENCY'         => 'Add New Currency'            , // TODO: Review
-	'LBL_CURRENCY_NAME'            => 'Currency Name'               , // TODO: Review
-	'LBL_CURRENCY_CODE'            => 'Currency Code'               , // TODO: Review
-	'LBL_CURRENCY_SYMBOL'          => 'Symbol'                      , // TODO: Review
-	'LBL_CONVERSION_RATE'          => 'Conversion Rate'             , // TODO: Review
-	'LBL_ENTER_CONVERSION_RATE'    => 'Enter Conversion Rate'       , // TODO: Review
-	'LBL_CURRENCY_STATUS_DESC'     => 'Enable checkbox to make currency Active', // TODO: Review
-	'LBL_TRANSFER_CURRENCY'        => 'Transfer Currency'           , // TODO: Review
-	'LBL_CURRENT_CURRENCY'         => 'Current Currency'            , // TODO: Review
+	'LBL_ADD_RECORD'               => 'Ajouter devise'                , 
+	'LBL_EDIT_CURRENCY'            => 'Modifier devise'               , 
+	'LBL_ADD_NEW_CURRENCY'         => 'Ajouter devise'            , 
+	'LBL_CURRENCY_NAME'            => 'Nom devise'               , 
+	'LBL_CURRENCY_CODE'            => 'Code devise'               , 
+	'LBL_CURRENCY_SYMBOL'          => 'Symbole'                      , 
+	'LBL_CONVERSION_RATE'          => 'Taux de conversion'             , 
+	'LBL_ENTER_CONVERSION_RATE'    => 'Saisir Taux de conversion'       , 
+	'LBL_CURRENCY_STATUS_DESC'     => 'Activer la devise avec la case à cocher', 
+	'LBL_TRANSFER_CURRENCY'        => 'Transférer devise'           , 
+	'LBL_CURRENT_CURRENCY'         => 'Devise courante'            , 
 	'Albania, Leke'                => 'Albania, Leke'               , // TODO: Review
 	'Argentina, Pesos'             => 'Argentina, Pesos'            , // TODO: Review
 	'Aruba, Guilders'              => 'Aruba, Guilders'             , // TODO: Review
@@ -151,6 +154,6 @@ $languageStrings = array(
 	'Moroccan, Dirham'             => 'Moroccan, Dirham'            , // TODO: Review
 );
 $jsLanguageStrings = array(
-	'JS_CURRENCY_DETAILS_SAVED'    => 'Currency Details Saved'      , // TODO: Review
-	'JS_CURRENCY_DELETED_SUEESSFULLY' => 'Currency Deleted Successfully', // TODO: Review
+	'JS_CURRENCY_DETAILS_SAVED'    => 'Réglage devise sauvée'      , 
+	'JS_CURRENCY_DELETED_SUEESSFULLY' => 'Devise supprimée', 
 );

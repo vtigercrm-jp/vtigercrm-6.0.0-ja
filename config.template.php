@@ -170,10 +170,7 @@ $default_charset = '_VT_CHARSET_';
 
 // default language
 // default_language default value = en_us
-// JFV - set default timezone to Tokyo
-//$default_language = 'en_us';
-$default_language = 'ja_jp';
-// JFV END
+$default_language = 'en_us';
 
 // add the language pack name to every translation string in the display.
 // translation_string_prefix default value = false
@@ -198,10 +195,7 @@ $listview_max_textlength = 40;
 $php_max_execution_time = 0;
 
 // Set the default timezone as per your preference
-// JFV - set default timezone to Tokyo
-//$default_timezone = 'UTC';
-$default_timezone = 'Asia/Tokyo';
-// JFV END
+$default_timezone = 'UTC';
 
 /** If timezone is configured, try to set it */
 if(isset($default_timezone) && function_exists('date_default_timezone_set')) {

@@ -32,6 +32,103 @@ class Vtiger_LanguageExport extends Vtiger_Package {
 		global $adb;
 		return $adb->getUniqueID(self::TABLENAME);
 	}
+	
+	/**
+	 * Initialize Export
+	 * @access private
+	 */
+	function __initExport($languageCode) {
+		// Security check to ensure file is withing the web folder.
+		Vtiger_Utils::checkFileAccessForInclusion("languages/$languageCode/Vtiger.php");
+		
+		$this->_export_modulexml_file = fopen($this->__getManifestFilePath(), 'w');
+		$this->__write("<?xml version='1.0'?>\n");
+	}
+	
+	/**
+	 * Export Module as a zip file.
+	 * @param Vtiger_Module Instance of module
+	 * @param Path Output directory path
+	 * @param String Zipfilename to use
+	 * @param Boolean True for sending the output as download
+	 */
+	function export($languageCode, $todir='', $zipfilename='', $directDownload=false) {
+
+		$this->__initExport($languageCode);
+		
+		// Call language export function
+		$this->export_Language($languageCode);
+
+		$this->__finishExport();
+		
+		// Export as Zip
+		if($zipfilename == '') $zipfilename = "$languageCode-" . date('YmdHis') . ".zip";
+		$zipfilename = "$this->_export_tmpdir/$zipfilename";
+
+		$zip = new Vtiger_Zip($zipfilename);
+
+		// Add manifest file
+		$zip->addFile($this->__getManifestFilePath(), "manifest.xml");
+
+		// Copy module directory
+		$zip->copyDirectoryFromDisk("languages/$languageCode", "modules");
+
+		$zip->save();
+
+		if($todir) {
+			copy($zipfilename, $todir);
+		}
+
+		if($directDownload) {
+			$zip->forceDownload($zipfilename);
+			unlink($zipfilename);
+		}
+		$this->__cleanupExport();
+	}
+	
+	/**
+	 * Export Language Handler
+	 * @access private
+	 */
+	function export_Language($prefix) {
+		global $adb;
+
+		$sqlresult = $adb->pquery("SELECT * FROM vtiger_language WHERE prefix = ?", array($prefix));
+		$languageresultrow = $adb->fetch_array($sqlresult);
+
+		$langname  = decode_html($languageresultrow['name']);
+		$langlabel = decode_html($languageresultrow['label']);
+
+		$this->openNode('module');
+		$this->outputNode(date('Y-m-d H:i:s'),'exporttime');
+		$this->outputNode($langname, 'name');
+		$this->outputNode($langlabel, 'label');
+		$this->outputNode($prefix, 'prefix');
+
+		$this->outputNode('language', 'type');
+
+		// Export dependency information
+		$this->export_Dependencies($moduleInstance);
+
+        $this->closeNode('module');
+	}
+	
+	/**
+	 * Export vtiger dependencies
+	 * @access private
+	 */
+	function export_Dependencies() {
+		global $vtiger_current_version, $adb;
+
+		$vtigerMinVersion = $vtiger_current_version;
+		$vtigerMaxVersion = false;
+
+		$this->openNode('dependencies');
+		$this->outputNode($vtigerMinVersion, 'vtiger_version');
+		if($vtigerMaxVersion !== false)	$this->outputNode($vtigerMaxVersion, 'vtiger_max_version');
+		$this->closeNode('dependencies');
+	}
+
 
 	/**
 	 * Initialize Language Schema

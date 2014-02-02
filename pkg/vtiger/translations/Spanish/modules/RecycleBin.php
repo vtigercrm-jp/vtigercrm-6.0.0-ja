@@ -11,7 +11,7 @@
  *  Version      : 6.0.0
  *  Created Date : 2013-05-10
  *  Author       : JPL TSolucio, S. L. Joe Bordes
- *  Last change  : 2013-05-10
+ *  Last change  : 2013-10-05
  *  Author       : JPL TSolucio, S. L. Joe Bordes
  ************************************************************************************/
 
@@ -28,6 +28,7 @@ $languageStrings = Array(
 $jsLanguageStrings = array(
 	'JS_MSG_EMPTY_RB_CONFIRMATION' => '¿Estás seguro que quieres eliminar permanentemente todos los registros borrados de la base de datos?',
 	'JS_LBL_RESTORE_RECORDS_CONFIRMATION' => '¿Estás seguro que quieres restaurar los registros?',
+	'JS_RESTORING_RECORDS' => 'Recuperando registros',
 );
 
 ?>

@@ -9,46 +9,55 @@
  *************************************************************************************/
 $languageStrings = array(
 	// Basic Strings
-	'Potentials' => 'Szanse Sprzedaży',
-	'SINGLE_Potentials' => 'Szansa Sprzedaży',
-	'LBL_ADD_RECORD' => 'Dodaj Szansę Sprzedaży',
-	'LBL_RECORDS_LIST' => 'Lista Szans Sprzedaży',
-	'LBL_RECORD_SUMMARY' => 'Podsumowanie Szans Sprzedaży',
+	'Potentials' => 'Szanse sprzedaży',
+	'SINGLE_Potentials' => 'Szansa sprzedaży',
+	'LBL_ADD_RECORD' => 'Dodaj rekord',
+	'LBL_RECORDS_LIST' => 'Lista rekordów',
 
 	// Blocks
-	'LBL_OPPORTUNITY_INFORMATION' => 'Informacje podstawowe',
-	
+	'LBL_OPPORTUNITY_INFORMATION' => 'Sczegóły podstawowe',
+
 	//Field Labels
-	'Potential No' => 'Numer Szansy Sprzedaży',
-	'Amount' => 'Wartość',
-	'Next Step' => 'Kolejny krok',
+	'Potential No' => 'Numer',
+	'Amount' => 'Kwota',
+	'Next Step' => 'Następny krok',
 	'Sales Stage' => 'Etap sprzedaży',
-	'Probability' => 'Prawdopodobieństwo sukcesu',
-	'Campaign Source' => 'Kampania reklamowa',
-	'Forecast Amount' => 'Planowany przychód',
+	'Probability' => 'Prawdopodobieństwo',
+	'Campaign Source' => 'Źródło kampanii',
+	'Forecast Amount' => 'Prognozowana kwota',
+	'Related To' => 'Kontrahent',
+	'Contact Name' => 'Kontakt',
 	
 	//Dashboard widgets
-	'Funnel' => 'Lejek Szans Sprzedaży',
-	'Potentials by Stage' => 'Szanse Sprzedaży według etapu',
-	'Total Revenue' => 'Przychody wg sprzedawcy',
-	'Top Potentials' => 'Najważniejsze szanse sprzedaży',
-	'Forecast' => 'Prognozy sprzedaży',
-	
+	'Funnel' => 'Lejek sprzedaży',
+	'Potentials by Stage' => 'Szanse według etapu',
+	'Total Revenue' => 'Przychody według sprzedawcy',
+	'Top Potentials' => 'Najlepsze szanse',
+	'Forecast' => 'Prognoza sprzedaży',
+
 	//Added for Existing Picklist Strings
 
-	'Prospecting'=>'Nowa sprzedaż',
-	'Qualification'=>'Rozpoznanie',
-	'Needs Analysis'=>'Analizy wymagań',
-	'Value Proposition'=>'Wstępna Wycena',
-	'Id. Decision Makers'=>'Podejmowanie decyzji',
-	'Perception Analysis'=>'Analiza potrzeb',
-	'Proposal/Price Quote'=>'Oferta cenowa',
+	'Prospecting'=>'Wstępny kontakt',
+	'Qualification'=>'Kwalifikacja',
+	'Needs Analysis'=>'Wymaga analizy',
+	'Value Proposition'=>'Szacowana wartość',
+	'Id. Decision Makers'=>'Zidentyfikować decydentów',
+	'Perception Analysis'=>'Analia',
+	'Proposal/Price Quote'=>'Ofertowanie',
 	'Negotiation/Review'=>'Negocjacje',
-	'Closed Won'=>'Zakończone sukcesem',
-	'Closed Lost'=>'Zakończone porażką',
+	'Closed Won'=>'Sprzedaż wygrana',
+	'Closed Lost'=>'Sprzedaż utracona',
 
-	'--None--'=>'-- Brak --',
-	'Existing Business'=>'Dla istniejącego klienta',
-	'New Business'=>'Dla nowego klienta',
-	'LBL_EXPECTED_CLOSE_DATE_ON' => 'Oczekuje się, że zakończy się'
+	'--None--'=>'--Brak--',
+	'Existing Business'=>'Istniejący biznes',
+	'New Business'=>'Nowy biznes',
+	'LBL_EXPECTED_CLOSE_DATE_ON' => 'Biznes zamykany',
+
+	//widgets headers
+	'LBL_RELATED_CONTACTS' => 'Kontakty',
+	'LBL_RELATED_PRODUCTS' => 'Powiązane produkty',
+	
+	//Opensaas
+	'Proposal or Price Quote' => 'Propozycja lub oferta cenowa',
+	'Negotiation or Review' => 'Negocjacje i weryfikacja',
 );

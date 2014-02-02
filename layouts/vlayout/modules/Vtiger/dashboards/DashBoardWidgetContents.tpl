@@ -15,13 +15,7 @@
 	<div class="widgetChartContainer" style="height:250px;width:85%"></div>
 {else}
 	<span class="noDataMsg">
-	{* JFV - remove LBL_NO for ja_jp *}
-	{if $smarty.session.authenticated_user_language eq 'ja_jp'}
-		条件に一致する{vtranslate($MODULE_NAME, $MODULE_NAME)}はありません。
-	{else}
 		{vtranslate('LBL_NO')} {vtranslate($MODULE_NAME, $MODULE_NAME)} {vtranslate('LBL_MATCHED_THIS_CRITERIA')}
-	{/if}
-	{* JFV END *}
 	</span>
 {/if}
 {/strip}

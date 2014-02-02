@@ -78,7 +78,7 @@
 			</td>
 			{foreach item=LISTVIEW_HEADER from=$LISTVIEW_HEADERS}
 			{assign var=LISTVIEW_HEADERNAME value=$LISTVIEW_HEADER->get('name')}
-			<td class="listViewEntryValue {$WIDTHTYPE}" data-field-type="{$LISTVIEW_HEADER->getFieldDataType()}" nowrap>
+			<td class="listViewEntryValue {$WIDTHTYPE}" data-field-type="{$LISTVIEW_HEADER->getFieldDataType()}" data-field-name="{$LISTVIEW_HEADER->getFieldName()}" nowrap>
 				{if $LISTVIEW_HEADER->isNameField() eq true or $LISTVIEW_HEADER->get('uitype') eq '4'}
 					<a href="{$LISTVIEW_ENTRY->getDetailViewUrl()}">{$LISTVIEW_ENTRY->get($LISTVIEW_HEADERNAME)}</a>
 				{else if $LISTVIEW_HEADER->get('uitype') eq '72'}
@@ -118,13 +118,7 @@
 			<tr>
 				<td>
 					{assign var=SINGLE_MODULE value="SINGLE_$MODULE"}
-					{* JFV - remove LBL_NO for ja_jp *}
-					{if $smarty.session.authenticated_user_language eq 'ja_jp'}
-					{vtranslate($MODULE, $MODULE)} {vtranslate('LBL_FOUND')}.<br>{if $IS_MODULE_EDITABLE} <a href="{$MODULE_MODEL->getCreateRecordUrl()}">{vtranslate($SINGLE_MODULE, $MODULE)}を作成する</a>{/if}
-					{else}
 					{vtranslate('LBL_NO')} {vtranslate($MODULE, $MODULE)} {vtranslate('LBL_FOUND')}.{if $IS_MODULE_EDITABLE} {vtranslate('LBL_CREATE')} <a href="{$MODULE_MODEL->getCreateRecordUrl()}">{vtranslate($SINGLE_MODULE, $MODULE)}</a>{/if}
-					{/if}
-					{* JFV END *}
 				</td>
 			</tr>
 		</tbody>

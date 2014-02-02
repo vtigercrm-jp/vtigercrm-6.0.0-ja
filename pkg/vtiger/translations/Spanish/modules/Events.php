@@ -12,7 +12,7 @@
  *  Version      : 6.0.0
  *  Created Date : 2012-10-25
  *  Author       : JPL TSolucio, S. L. Joe Bordes
- *  Last change  : 2013-05-03
+ *  Last change  : 2013-11-10
  *  Author       : JPL TSolucio, S. L. Joe Bordes
  ************************************************************************************/
 $languageStrings = array(
@@ -28,7 +28,7 @@ $languageStrings = array(
 	'Recurrence'                   => 'Eventos Recurrentes',
 	'Send Notification'            => 'Enviar notificación',
 	'Location'                     => 'Localización',
-	'Send Reminder'                => 'Enviar Recordatorio',
+	'Send Reminder'                => 'Enviar Email de Recordatorio antes',
 	'End Date & Time'              => 'Fecha y Hora de Fin',
 	'Activity Type'                => 'Tipo de Evento',
 	'Visibility'                   => 'Visibilidad',
@@ -74,4 +74,5 @@ $languageStrings = array(
 	'LBL_ON' => 'en',
 	'LBL_INVITE_USER_BLOCK' => 'Invita',
 	'LBL_INVITE_USERS' => 'Invita Usuarios',
+	'INVITATION'=>' Invitación ',
 );

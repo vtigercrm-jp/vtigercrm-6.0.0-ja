@@ -6,12 +6,15 @@
  * The Initial Developer of the Original Code is vtiger.
  * Portions created by vtiger are Copyright (C) vtiger.
  * All Rights Reserved.
+ * Translated by ABOnline solutions - http://www.abo-s.com/
+ * Boris CLEMENT
+ * December 2013   
  ************************************************************************************/
 $languageStrings = array(
 	'SINGLE_Quotes'                => 'Devis'                       , 
 	'LBL_EXPORT_TO_PDF'            => 'Export PDF'                  , 
-	'LBL_SEND_MAIL_PDF'            => 'Send Email with PDF'         , // TODO: Review
-	'LBL_ADD_RECORD'               => 'Add Quote'                   , 
+	'LBL_SEND_MAIL_PDF'            => 'Envoi PDF par Email'         , 
+	'LBL_ADD_RECORD'               => 'Ajouter devis'                   , 
 	'LBL_RECORDS_LIST'             => 'Liste devis'                 , 
 	'LBL_QUOTE_INFORMATION'        => 'Détail devis'               , 
 	'Quote No'                     => 'Devis N°'                   , 
@@ -20,6 +23,8 @@ $languageStrings = array(
 	'Inventory Manager'            => 'Responsable du stock'        , 
 	'Accepted'                     => 'Accepté'                    , 
 	'Rejected'                     => 'Rejeté'                     ,
+	'LBL_COPY_SHIPPING_ADDRESS'    => 'Copier l\'adresse de livraison'       , 
+	'LBL_COPY_BILLING_ADDRESS'     => 'Copier l\'adresse de facturation'        , 	
 	
 	//Translations used for Export to Pdf
 	'Valid Date' => 'Date de validité',

@@ -6,6 +6,9 @@
  * The Initial Developer of the Original Code is vtiger.
  * Portions created by vtiger are Copyright (C) vtiger.
  * All Rights Reserved.
+ * Translated by ABOnline solutions - http://www.abo-s.com/
+ * Boris CLEMENT
+ * December 2013   
  ************************************************************************************/
 $languageStrings = array(
 	'LBL_IMPORT_STEP_1'            => 'Etape 1'                     , 
@@ -15,8 +18,8 @@ $languageStrings = array(
 	'LBL_IMPORT_STEP_2_DESCRIPTION' => 'Format'                      , 
 	'LBL_FILE_TYPE'                => 'Type de fichier'             , 
 	'LBL_CHARACTER_ENCODING'       => 'Encodage des caractères'    , 
-	'LBL_DELIMITER'                => 'Delimiteur'                  , 
-	'LBL_HAS_HEADER'               => 'Contient une ligne d\'entetes', 
+	'LBL_DELIMITER'                => 'Délimiteur'                  , 
+	'LBL_HAS_HEADER'               => 'Contient une ligne d\'entêtes', 
 	'LBL_IMPORT_STEP_3'            => 'Etape 3'                     , 
 	'LBL_IMPORT_STEP_3_DESCRIPTION' => 'Option de fusion '           , 
 	'LBL_IMPORT_STEP_3_DESCRIPTION_DETAILED' => 'Activer cette option dans le cas de la mise à jour de fiches existantes dans le CRM', 
@@ -33,7 +36,7 @@ $languageStrings = array(
 	'LBL_DEFAULT_VALUE'            => 'Valeur par défaut'          , 
 	'LBL_SAVE_AS_CUSTOM_MAPPING'   => 'Sauver ce mapping'           , 
 	'LBL_IMPORT_BUTTON_LABEL'      => 'Import'                      , 
-	'LBL_RESULT'                   => 'Resultats'                   , 
+	'LBL_RESULT'                   => 'Résultats'                   , 
 	'LBL_TOTAL_RECORDS_IMPORTED'   => 'Nombre total d\'enregistrements importés', 
 	'LBL_NUMBER_OF_RECORDS_CREATED' => 'Nombre total d\'enregistrements créés', 
 	'LBL_NUMBER_OF_RECORDS_UPDATED' => 'Nombre total d\'enregistrements fusionés', 
@@ -58,16 +61,20 @@ $languageStrings = array(
 	'ERR_IMPORT_INTERRUPTED'       => 'L\'import courant a été interrompu. Essayez plus tard.', 
 	'ERR_FAILED_TO_LOCK_MODULE'    => 'Impossible de vérouiller ce module pour l\'import. Essayez plus tard', 
 	'LBL_SELECT_SAVED_MAPPING'     => 'Select Saved Mapping'        , 
-	'LBL_IMPORT_ERROR_LARGE_FILE'  => 'Import Error Large file '    , // TODO: Review
-	'LBL_FILE_UPLOAD_FAILED'       => 'File Upload Failed'          , // TODO: Review
+	'LBL_IMPORT_ERROR_LARGE_FILE'  => 'Fichier d\'import trop grand '    , 
+	'LBL_FILE_UPLOAD_FAILED'       => 'Erreur pendant l\'import du fichier'          , 
 	'LBL_IMPORT_CHANGE_UPLOAD_SIZE' => 'Import Change Upload Size'   , // TODO: Review
-	'LBL_IMPORT_DIRECTORY_NOT_WRITABLE' => 'Import Directory is not writable', // TODO: Review
-	'LBL_IMPORT_FILE_COPY_FAILED'  => 'Import File copy failed'     , // TODO: Review
-	'LBL_INVALID_FILE'             => 'Invalid File'                , // TODO: Review
-	'LBL_NO_ROWS_FOUND'            => 'No rows found'               , // TODO: Review
-	'LBL_SCHEDULED_IMPORT_DETAILS' => 'Your import has been scheduled and will start within 15 minutes. You will receive an email after import is completed.  <br> <br>
-										Please make sure that the Outgoing server and your email address is configured to receive email notification', // TODO: Review
-	'LBL_DETAILS'                  => 'Details'                     , // TODO: Review
-	'skipped'                      => 'Skipped Records'             , // TODO: Review
-	'failed'                       => 'Failed Records'              , // TODO: Review
+	'LBL_IMPORT_DIRECTORY_NOT_WRITABLE' => 'Impossible d\'écrire dans le répertoire d\'import', 
+	'LBL_IMPORT_FILE_COPY_FAILED'  => 'la copie du fichier d\'import a échoué'     , 
+	'LBL_INVALID_FILE'             => 'Fichier invalide'                , 
+	'LBL_NO_ROWS_FOUND'            => 'Aucune colonne trouvée'               , 
+	'LBL_SCHEDULED_IMPORT_DETAILS' => 'Votre import a été programmé, les données seront importées progressivement.',
+	'LBL_DETAILS'                  => 'Détails'                     , 
+	'skipped'                      => 'Enregistrements ignorés'             , 
+	'failed'                       => 'Enregistrements avec erreur'              , 
+	'Skip'                       => 'Ignorer'              , 
+	'Overwrite'                       => 'Ecraser'              , 
+	'Merge'                       => 'Fusionner'              , 
+	'comma'                       => 'Virgule'              , 
+	'semicolon'                       => 'Point-virgule'              , 	
 );

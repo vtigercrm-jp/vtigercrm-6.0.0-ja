@@ -6,13 +6,17 @@
  * The Initial Developer of the Original Code is vtiger.
  * Portions created by vtiger are Copyright (C) vtiger.
  * All Rights Reserved.
+ * Translated by ABOnline solutions - http://www.abo-s.com/
+ * Boris CLEMENT
+ * December 2013      
  ************************************************************************************/
 $languageStrings = array(
-	'SINGLE_ProjectMilestone'      => 'Project Milestone'           , 
-	'LBL_ADD_RECORD'               => 'Add Project Milestone'       , 
-	'LBL_RECORDS_LIST'             => 'Project Milestones List'     , 
-	'LBL_PROJECT_MILESTONE_INFORMATION' => 'Project Milestone Details'   , 
-	'Project Milestone Name'       => 'Project Milestone Name'      , 
-	'Milestone Date'               => 'Milestone Date'              , 
-	'Project Milestone No'         => 'Project Milestone Number'    , 
+	'ProjectMilestone'      => 'Jalons Projet'           , 
+	'SINGLE_ProjectMilestone'      => 'Jalon Projet'           , 
+	'LBL_ADD_RECORD'               => 'Ajouter Jalon Projet'       , 
+	'LBL_RECORDS_LIST'             => 'Liste des Jalons Projet'     , 
+	'LBL_PROJECT_MILESTONE_INFORMATION' => 'Details Jalon Projet'   , 
+	'Project Milestone Name'       => 'Nom Jalon Projet'      , 
+	'Milestone Date'               => 'Date du jalon'              , 
+	'Project Milestone No'         => 'Numéro du Jalon Projet'    , 
 );

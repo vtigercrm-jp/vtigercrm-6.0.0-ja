@@ -87,13 +87,7 @@
 		<tbody>
 			<tr>
 				<td>
-				{* JFV - remove LBL_NO for ja_jp *}
-				{if $smarty.session.authenticated_user_language eq 'ja_jp'}
-					{vtranslate($MODULE, $QUALIFIED_MODULE)} {vtranslate('LBL_FOUND')}
-				{else}
 					{vtranslate('LBL_NO')} {vtranslate($MODULE, $QUALIFIED_MODULE)} {vtranslate('LBL_FOUND')}
-				{/if}
-				{* JFV END *}
 				</td>
 			</tr>
 		</tbody>

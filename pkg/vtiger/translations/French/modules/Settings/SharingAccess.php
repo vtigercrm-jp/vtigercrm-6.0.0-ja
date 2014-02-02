@@ -6,31 +6,39 @@
  * The Initial Developer of the Original Code is vtiger.
  * Portions created by vtiger are Copyright (C) vtiger.
  * All Rights Reserved.
+ * Translated by ABOnline solutions - http://www.abo-s.com/
+ * Boris CLEMENT
+ * December 2013    
  ************************************************************************************/
 $languageStrings = array(
-	'Accounts'                     => 'Organizations & Contacts'    , // TODO: Review
+	'Accounts'                     => 'Comptes & Contacts'    , 
 	'LBL_ADD_CUSTOM_RULE'          => 'Ajouter privilège spécial' , 
-	'Read Only'                    => 'R'                           , 
-	'Read Write'                   => 'R+W'                         , 
-	'LBL_ADD_CUSTOM_RULE_TO'       => 'Add Custom Rule to'          , // TODO: Review
+	'Read Only'                    => 'Lecture seule'                           , 
+	'Read Write'                   => 'Lecture / Ecriture'                         , 
+	'LBL_ADD_CUSTOM_RULE_TO'       => 'Ajouter une règle personnalisée à '          , 
 	'LBL_CAN_ACCESSED_BY'          => ' peut être vu par '         , 
 	'LBL_PRIVILEGES'               => 'Privilèges'                 , 
-	'LBL_SHARING_RULE'             => 'Sharing Rules'               , 
+	'LBL_SHARING_RULE'             => 'Règles de partage'               , 
 	'LBL_RULE_NO'                  => 'Règle n°'                  , 
-	'LBL_MODULE'                   => 'Module'                      , // TODO: Review
-	'LBL_ADVANCED_SHARING_RULES'   => 'Advanced Sharing Rules'      , // TODO: Review
-	'LBL_WITH_PERMISSIONS'         => 'With Permissions'            , // TODO: Review
-	'LBL_APPLY_NEW_SHARING_RULES'  => 'Apply New Sharing Rules'     , // TODO: Review
-	'LBL_READ'                     => 'Read'                        , // TODO: Review
-	'LBL_READ_WRITE'               => 'Read and Write'              , // TODO: Review
-	'LBL_CUSTOM_ACCESS_MESG'       => 'No Custom Access Rules defined', // TODO: Review
-	'SINGLE_Groups'                => 'Group'                       , // TODO: Review
-	'SINGLE_Roles'                 => 'Role'                        , // TODO: Review
-	'SINGLE_RoleAndSubordinates'   => 'RoleAndSubordinate'          , // TODO: Review
+	'LBL_MODULE'                   => 'Module'                      , 
+	'LBL_ADVANCED_SHARING_RULES'   => 'Règles de partage avancées'      , 
+	'LBL_WITH_PERMISSIONS'         => 'avec permissions'            , 
+	'LBL_APPLY_NEW_SHARING_RULES'  => 'Appliquer la nouvelle règle de partage'     , 
+	'LBL_READ'                     => 'Lecture'                        , 
+	'LBL_READ_WRITE'               => 'Lecture / Ecriture'              , 
+	'LBL_CUSTOM_ACCESS_MESG'       => 'Aucune règle de partage définie', 
+	'SINGLE_Groups'                => 'Groupe'                       , 
+	'SINGLE_Roles'                 => 'Rôle'                        , 
+	'SINGLE_RoleAndSubordinates'   => 'Rôle et subordonnées'          , 
+	'Read, Create/Edit, Delete'	   => 'Lecture, Ecriture, Suppression',
+	'Public: Read Only'				=> 'Public: Lecture',
+	'Public: Read, Create/Edit'		=> 'Public: Lecture, Ecriture',
+	'Public: Read, Create/Edit, Delete'		=> 'Public: Lecture, Ecriture, Suppression',	
+	'Private'                		=> 'Privé'                       , 
 );
 $jsLanguageStrings = array(
-	'JS_CUSTOM_RULE_SAVED_SUCCESSFULLY' => 'Custom Sharing Rule Saved Successfully', // TODO: Review
-	'JS_SELECT_ANY_OTHER_ACCESSING_USER' => 'Select any other accessing user', // TODO: Review
-	'JS_NEW_SHARING_RULES_APPLIED_SUCCESSFULLY' => 'New Sharing Rules Applied Successfully', // TODO: Review
-	'JS_DEPENDENT_PRIVILEGES_SHOULD_CHANGE' => 'Opportunities, Tickets, Quotes, SalesOrder & Invoice Access must be set to Private when the Organization Access is set to Private', // TODO: Review
+	'JS_CUSTOM_RULE_SAVED_SUCCESSFULLY' => 'Règle de partage enregistrée', 
+	'JS_SELECT_ANY_OTHER_ACCESSING_USER' => 'Choisir d\'autres utilisateurs', 
+	'JS_NEW_SHARING_RULES_APPLIED_SUCCESSFULLY' => 'Règle de partage enregistrée', 
+	'JS_DEPENDENT_PRIVILEGES_SHOULD_CHANGE' => 'Les accès aux Affaires, Tickets, Devis, Commande client & Facture doivent être privés quand les comptes sont privés', 
 );

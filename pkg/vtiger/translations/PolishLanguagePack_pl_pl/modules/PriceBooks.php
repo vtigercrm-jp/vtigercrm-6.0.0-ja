@@ -11,13 +11,12 @@ $languageStrings = array(
 	// Basic Strings
 	'PriceBooks' => 'Cenniki',
 	'SINGLE_PriceBooks' => 'Cennik',
-	'LBL_ADD_RECORD' => 'Dodaj Cennik',
-	'LBL_RECORDS_LIST' => 'Lista Cenników',
-	'LBL_RECORD_SUMMARY' => 'Podsumowanie Cennika',
+	'LBL_ADD_RECORD' => 'Dodaj rekord',
+	'LBL_RECORDS_LIST' => 'Lista rekordÃ³w',
 
 	// Blocks
-	'LBL_PRICEBOOK_INFORMATION' => 'Informacje podstawowe',
-	'LBL_EDIT_LIST_PRICE' => 'Edytuj listê cenników',
+	'LBL_PRICEBOOK_INFORMATION' => 'SczegÃ³Å‚y cennika',
+	'LBL_EDIT_LIST_PRICE' => 'Edytuj cenny dla produktÃ³w/usÅ‚ug',
 
 	//Field Labels
 	'Price Book Name' => 'Nazwa cennika',

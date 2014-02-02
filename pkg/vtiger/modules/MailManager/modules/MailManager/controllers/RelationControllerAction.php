@@ -207,7 +207,7 @@ class MailManager_RelationControllerAction_Controller extends Vtiger_MailScanner
 	 */
 	static function buildDetailViewLink($module, $record, $label) {
 
-		$detailViewLink = sprintf("<a target='_blank' href='vtiger6/index.php?module=%s&view=Detail&record=%s'>%s</a>", $module, $record, textlength_check($label));
+		$detailViewLink = sprintf("<a target='_blank' href='index.php?module=%s&view=Detail&record=%s'>%s</a>", $module, $record, textlength_check($label));
 		return array('record' => $record, 'module' => $module, 'label' => $label, 'detailviewlink' => $detailViewLink);
 	}
 

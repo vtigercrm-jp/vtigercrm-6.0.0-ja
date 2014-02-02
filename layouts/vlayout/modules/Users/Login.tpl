@@ -101,10 +101,7 @@
 									<div class="login-area">
 										<div class="login-box" id="loginDiv">
 											<div class="">
-												{* JFV - login page translation *}
-												{* <h3 class="login-header">Login to Vtiger CRM</h3> *}
-												<h3 class="login-header">vtiger CRM ログイン</h3>
-												{* JFV END *}
+												<h3 class="login-header">Login to Vtiger CRM</h3>
 											</div>
 											<form class="form-horizontal login-form" style="margin:0;" action="index.php?module=Users&action=Login" method="POST">
 												{if isset($smarty.request.error)}
@@ -128,32 +125,22 @@
 													</div>
 												{/if}
 												<div class="control-group">
-													{* JFV - login page translation *}
-													{*　<label class="control-label" for="username"><b>User name</b></label>　*}
-													<label class="control-label" for="username"><b>ユーザー名</b></label>
-													{* JFV END *}
+													<label class="control-label" for="username"><b>User name</b></label>
 													<div class="controls">
 														<input type="text" id="username" name="username" placeholder="Username">
 													</div>
 												</div>
 
 												<div class="control-group">
-													{* JFV - login page translation *}
-													{* <label class="control-label" for="password"><b>Password</b></label> *}
-													<label class="control-label" for="password"><b>パスワード</b></label>
-													{* JFV END *}
+													<label class="control-label" for="password"><b>Password</b></label>
 													<div class="controls">
 														<input type="password" id="password" name="password" placeholder="Password">
 													</div>
 												</div>
 												<div class="control-group signin-button">
 													<div class="controls" id="forgotPassword">
-														{* JFV - login page translation *}
-														{* <button type="submit" class="btn btn-primary sbutton">Sign in</button> *}
-														<button type="submit" class="btn btn-primary sbutton">サインイン</button>
-														{* &nbsp;&nbsp;&nbsp;<a>Forgot Password ?</a> *}
-														&nbsp;&nbsp;&nbsp;<a>パスワードを紛失しました</a>
-														{* JFV END *}
+														<button type="submit" class="btn btn-primary sbutton">Sign in</button>
+														&nbsp;&nbsp;&nbsp;<a>Forgot Password ?</a>
 													</div>
 												</div>
 												{* Retain this tracker to help us get usage details *}
@@ -167,37 +154,24 @@
 										<div class="login-box hide" id="forgotPasswordDiv">
 											<form class="form-horizontal login-form" style="margin:0;" action="forgotPassword.php" method="POST">
 												<div class="">
-													{* JFV - login page translation *}
-													{* <h3 class="login-header">Forgot Password</h3> *}
-													<h3 class="login-header">パスワードの紛失</h3>
-													{* JFV END *}
+													<h3 class="login-header">Forgot Password</h3>
 												</div>
 												<div class="control-group">
-													{* JFV - login page translation *}
-													{* <label class="control-label" for="user_name"><b>User name</b></label>　*}
-													<label class="control-label" for="user_name"><b>ユーザー名</b></label>
-													{* JFV END *}
+													<label class="control-label" for="user_name"><b>User name</b></label>
 													<div class="controls">
 														<input type="text" id="user_name" name="user_name" placeholder="Username">
 													</div>
 												</div>
 												<div class="control-group">
-													{* JFV - login page translation *}
-													{* <label class="control-label" for="email"><b>Email</b></label> *}
-													<label class="control-label" for="email"><b>電子メール</b></label>
-													{* JFV END *}
+													<label class="control-label" for="email"><b>Email</b></label>
 													<div class="controls">
 														<input type="text" id="emailId" name="emailId"  placeholder="Email">
 													</div>
 												</div>
 												<div class="control-group signin-button">
 													<div class="controls" id="backButton">
-														{* JFV - login page translation *}
-														{* <input type="submit" class="btn btn-primary sbutton" value="Submit" name="retrievePassword"> *}
-														<input type="submit" class="btn btn-primary sbutton" value="送信" name="retrievePassword">
-														{* &nbsp;&nbsp;&nbsp;<a>Back</a> *}
-														&nbsp;&nbsp;&nbsp;<a>戻る</a>
-														{* JFV END *}
+														<input type="submit" class="btn btn-primary sbutton" value="Submit" name="retrievePassword">
+														&nbsp;&nbsp;&nbsp;<a>Back</a>
 													</div>
 												</div>
 											</form>

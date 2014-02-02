@@ -12,7 +12,7 @@
  *  Version      : 6.0.0
  *  Created Date : 2012-10-25
  *  Author       : JPL TSolucio, S. L. Joe Bordes
- *  Last change  : 2013-05-03
+ *  Last change  : 2013-10-05
  *  Author       : JPL TSolucio, S. L. Joe Bordes
  ************************************************************************************/
 $languageStrings = array(
@@ -28,6 +28,9 @@ $languageStrings = array(
 	'Industry'                     => 'Industria',
 	'Lead Status'                  => 'Estado Pre-Contacto',
 	'No Of Employees'              => 'Numero de Empleados',
+	'Secondary Email' => 'Email (Alternativo)',
+	'Phone' => 'Teléfono',
+	'Email' => 'Email',
 	'--None--'                     => '--Ninguno--',
 	'Mr.'                          => 'Sr.',
 	'Ms.'                          => 'Sra.',

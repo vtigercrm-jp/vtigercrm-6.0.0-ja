@@ -12,7 +12,7 @@
  *  Version      : 6.0.0
  *  Created Date : 2012-10-26
  *  Author       : JPL TSolucio, S. L. Joe Bordes
- *  Last change  : 2013-05-11
+ *  Last change  : 2013-10-05
  *  Author       : JPL TSolucio, S. L. Joe Bordes
  ************************************************************************************/
 $languageStrings = array(
@@ -33,6 +33,16 @@ $languageStrings = array(
 	'LBL_NAME' => 'Nombre',
 	'LBL_ASSIGN_NEW_PRIVILEGES' => 'Asignar privilegios directamente al Rol',
 	'LBL_ASSIGN_EXISTING_PRIVILEGES' => 'Asignar privilegios a partir de perfiles existentes',
-	'LBL_PRIVILEGES' => 'Privilegios'
+	'LBL_PRIVILEGES' => 'Privilegios',
+	'LBL_DUPLICATES_EXIST' => 'Existe Rol Duplicado',
+	//Assign Records to
+	'LBL_CAN_ASSIGN_RECORDS_TO' => 'Se pueden asignar registros a',
+	'LBL_ALL_USERS' => 'Todos los Usuarios',
+	'LBL_USERS_WITH_LOWER_LEVEL' => 'Usuarios con Roles Subordinados',
+	'LBL_USERS_WITH_SAME_OR_LOWER_LEVEL' => 'Usuarios con mismo Rol o Subordinado',
+);
 
+$jsLanguageStrings = array(
+	'JS_PERMISSION_DENIED' => 'Permiso Denegado',
+	'JS_NO_PERMISSIONS_TO_MOVE' => 'No hay permiso para Mover',
 );

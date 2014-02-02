@@ -11,7 +11,7 @@
  *  Version      : 6.0.0
  *  Created Date : 2013-05-10
  *  Author       : JPL TSolucio, S. L. Joe Bordes
- *  Last change  : 2013-05-11
+ *  Last change  : 2013-10-05
  *  Author       : JPL TSolucio, S. L. Joe Bordes
  *************************************************************************************/
 $languageStrings = array(
@@ -19,6 +19,7 @@ $languageStrings = array(
 	'LBL_NEW' => 'Nuevo',
 	'LBL_WORKFLOW' => 'Flujo de Trabajo',
 	'LBL_CREATING_WORKFLOW' => 'Creando Flujo de Trabajo',
+	'LBL_EDITING_WORKFLOW' => 'Editando Flujo de Trabajo',
 	'LBL_NEXT' => 'Siguiente',
 
 	//Edit view
@@ -33,7 +34,7 @@ $languageStrings = array(
 	'SCHEDULE_WORKFLOW' => 'Programa Flujo de Trabajo',
 	'ADD_CONDITIONS' => 'Añadir Condición',
 	'ADD_TASKS' => 'Añadir Tarea',
-	
+
 	//Step2 edit view
 	'LBL_EXPRESSION' => 'Expresión',
 	'LBL_FIELD_NAME' => 'Campo',

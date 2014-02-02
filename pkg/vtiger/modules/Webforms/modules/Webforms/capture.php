@@ -10,13 +10,16 @@
 // Switch the working directory to base
 chdir(dirname(__FILE__) . '/../..');
 
-include_once 'include/Zend/Json.php';
-include_once 'vtlib/Vtiger/Module.php';
-include_once 'include/utils/VtlibUtils.php';
+require_once 'config.php';
+if (file_exists('config_override.php')) {
+    include_once 'config_override.php';
+}
+
+include_once 'includes/main/WebUI.php';
+
 include_once 'include/Webservices/Create.php';
 include_once 'modules/Webforms/model/WebformsModel.php';
 include_once 'modules/Webforms/model/WebformsFieldModel.php';
-include_once 'include/QueryGenerator/QueryGenerator.php';
 
 class Webform_Capture {
 	

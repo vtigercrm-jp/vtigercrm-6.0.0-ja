@@ -12,11 +12,12 @@
  *  Version      : 6.0.0
  *  Created Date : 2012-10-25
  *  Author       : JPL TSolucio, S. L. Joe Bordes
- *  Last change  : 2013-05-03
+ *  Last change  : 2013-11-10
  *  Author       : JPL TSolucio, S. L. Joe Bordes
  ************************************************************************************/
 $languageStrings = array(
-	'SINGLE_Calendar'              => 'Calendario',
+	'SINGLE_Calendar'              => 'Tarea',
+	'SINGLE_Events' => 'Evento',
 	'LBL_ADD_TASK'                 => 'Añadir Tarea',
 	'LBL_ADD_EVENT'                => 'Añadir Evento',
 	'LBL_RECORDS_LIST'             => 'Vista de Lista',
@@ -43,6 +44,7 @@ $languageStrings = array(
 	'LBL_CHANGE_OWNER'             => 'Cambiar Propietario',
 	'LBL_EVENT'                    => 'Evento',
 	'LBL_TASK'                     => 'Tarea',
+	'LBL_TASKS'                     => 'Tareas',
 	'LBL_CALENDAR_VIEW'            => 'Vista Calendario',
 	'LBL_CALENDAR_SETTINGS' => 'Configurar Calendario',
 	'LBL_CALENDAR_SHARING' => 'Compartir Calendario',
@@ -51,6 +53,7 @@ $languageStrings = array(
 	'LBL_OTHER_EVENTS' => 'Otros Eventos',
 	'LBL_MINUTES' => 'Minutos',
 	'LBL_SELECT_USERS' => 'Selecciona Usuarios',
+	'LBL_EVENT_OR_TASK' => 'Evento / Tarea',
 	'LBL_ADDED_CALENDARS' => 'Calendarios Añadidos',
 	'Task' => 'Tarea',
 	'LBL_SHARED_CALENDAR' => 'Calendario Compartido',
@@ -69,6 +72,19 @@ $languageStrings = array(
 	'Weekly' => 'Semana(s)',
 	'Monthly' => 'Mes(es)',
 	'Yearly' => 'Año',
+	//Import and Export Labels
+	'LBL_IMPORT_RECORDS' => 'Importar Registros',
+	'LBL_RESULT' => 'Resultado',
+	'LBL_FINISH' => 'Terminar',
+	'LBL_TOTAL_TASKS_IMPORTED' => 'Nº de Tareas Importadas Correctamente ',
+	'LBL_TOTAL_TASKS_SKIPPED' => 'Nº de Tareas Ignoradas debido a que falta uno o más campos obligatorios ',
+	'LBL_TOTAL_EVENTS_IMPORTED' => 'Nº de Eventos Importados Correctamente ',
+	'LBL_TOTAL_EVENTS_SKIPPED' => 'Nº de Eventos Ignorados debido a que falta uno o más campos obligatorios ',
+
+	'ICAL_FORMAT' => 'Formato iCal',
+	'LBL_LAST_IMPORT_UNDONE'=>'Se ha desecho la última importación',
+	'LBL_UNDO_LAST_IMPORT' => 'Deshacer Ultima Importación'
+
 );
 $jsLanguageStrings = array(
 	'LBL_ADD_EVENT_TASK'           => 'Añadir Evento / Tarea' ,
@@ -78,55 +94,57 @@ $jsLanguageStrings = array(
 	'LBL_NOT_SYNCRONIZED' => 'No se ha sincronizado todavía',
 	'LBL_FIELD_MAPPING' => 'Asociación de Campos',
 	'LBL_CANT_SELECT_CONTACT_FROM_LEADS' => 'No se puede seleccionar contactos relacionados por pre-contactos',
-	
+	'JS_FUTURE_EVENT_CANNOT_BE_HELD' => 'No puede ser mantenida en el futuro (todavia).',
+
 	//Calendar view label translation
-	'LBL_MONTH' => 'Month',
-	'LBL_TODAY' => 'Today',
-	'LBL_DAY' => 'Day',
-	'LBL_WEEK' => 'Week',
-	
-	'LBL_SUNDAY' => 'Sunday',
-	'LBL_MONDAY' => 'Monday',
-	'LBL_TUESDAY' => 'Tuesday',
-	'LBL_WEDNESDAY' => 'Wednesday',
-	'LBL_THURSDAY' => 'Thursday',
-	'LBL_FRIDAY' => 'Friday',
-	'LBL_SATURDAY' => 'Saturday',
-	
-	'LBL_SUN' => 'Sun',
-	'LBL_MON' => 'Mon',
-	'LBL_TUE' => 'Tue',
-	'LBL_WED' => 'Wed',
-	'LBL_THU' => 'Thu',
-	'LBL_FRI' => 'Fri',
-	'LBL_SAT' => 'Sat',
-	
-	'LBL_JANUARY' => 'January',
-	'LBL_FEBRUARY' => 'February',
-	'LBL_MARCH' => 'March',
-	'LBL_APRIL' => 'April',
-	'LBL_MAY' => 'May',
-	'LBL_JUNE' => 'June',
-	'LBL_JULY' => 'July',
-	'LBL_AUGUST' => 'August',
-	'LBL_SEPTEMBER' => 'September',
-	'LBL_OCTOBER' => 'October',
-	'LBL_NOVEMBER' => 'November',
-	'LBL_DECEMBER' => 'December',
-	
-	'LBL_JAN' => 'Jan',
+	'LBL_MONTH' => 'Mes',
+	'LBL_TODAY' => 'Hoy',
+	'LBL_DAY' => 'Día',
+	'LBL_WEEK' => 'Semana',
+
+	'LBL_SUNDAY' => 'Domingo',
+	'LBL_MONDAY' => 'Lunes',
+	'LBL_TUESDAY' => 'Martes',
+	'LBL_WEDNESDAY' => 'Miércoles',
+	'LBL_THURSDAY' => 'Jueves',
+	'LBL_FRIDAY' => 'Viernes',
+	'LBL_SATURDAY' => 'Sábado',
+
+	'LBL_SUN' => 'Dom',
+	'LBL_MON' => 'Lun',
+	'LBL_TUE' => 'Mar',
+	'LBL_WED' => 'Mié',
+	'LBL_THU' => 'Jue',
+	'LBL_FRI' => 'Vie',
+	'LBL_SAT' => 'Sáb',
+
+	'LBL_JANUARY' => 'Enero',
+	'LBL_FEBRUARY' => 'Febrero',
+	'LBL_MARCH' => 'Marzo',
+	'LBL_APRIL' => 'Abril',
+	'LBL_MAY' => 'Mayo',
+	'LBL_JUNE' => 'Junio',
+	'LBL_JULY' => 'Julio',
+	'LBL_AUGUST' => 'Agosto',
+	'LBL_SEPTEMBER' => 'Septiembre',
+	'LBL_OCTOBER' => 'Octubre',
+	'LBL_NOVEMBER' => 'Noviembre',
+	'LBL_DECEMBER' => 'Diciembre',
+
+	'LBL_JAN' => 'Ene',
 	'LBL_FEB' => 'Feb',
 	'LBL_MAR' => 'Mar',
-	'LBL_APR' => 'Apr',
+	'LBL_APR' => 'Abr',
 	'LBL_MAY' => 'May',
 	'LBL_JUN' => 'Jun',
 	'LBL_JUL' => 'Jul',
-	'LBL_AUG' => 'Aug',
+	'LBL_AUG' => 'Ago',
 	'LBL_SEP' => 'Sep',
 	'LBL_OCT' => 'Oct',
 	'LBL_NOV' => 'Nov',
-	'LBL_DEC' => 'Dec',
-	
-	'LBL_ALL_DAY' => 'All-Day',
+	'LBL_DEC' => 'Dic',
+
+	'LBL_ALL_DAY' => 'Todo el Día',
 	//End
+
 );

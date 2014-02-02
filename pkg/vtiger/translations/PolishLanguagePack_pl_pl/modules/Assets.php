@@ -9,28 +9,28 @@
  *************************************************************************************/
 $languageStrings = array(
 	// Basic Strings
-	'SINGLE_Assets' => 'Produkt Serwisowy',
-	'LBL_ADD_RECORD' => 'Dodaj Produkt Serwisowy',
-	'LBL_RECORDS_LIST' => 'Lista Produktów Serwisowych',
-	'LBL_RECORD_SUMMARY' => 'Podsumowanie Produktu Serwisowego',
+	'Assets'        => 'Produkty klienta',
+	'SINGLE_Assets' => 'Produkt klienta',
+	'LBL_ADD_RECORD' => 'Dodaj rekord',
+	'LBL_RECORDS_LIST' => 'Lista rekordów',
 
 	// Blocks
-	'LBL_ASSET_INFORMATION' => 'Szczegóły Produktu Serwisowego',
-	
+	'LBL_ASSET_INFORMATION' => 'Szczegóły dotyczące produktu klienta',
+
 	//Field Labels
-    'Asset No' => 'Numer', 
-	'Serial Number' => 'Numer seryjny', 
+    'Asset No' => 'Nr',
+	'Serial Number' => 'Numer seryjny',
 	'Date Sold' => 'Data sprzedaży',
-	'Date in Service' => 'Data ważności serwisu',
+	'Date in Service' => 'Czas zakończenia wsparcia',
 	'Tag Number' => 'Oznaczenie',
-	'Invoice Name' => 'Faktura',
-	'Shipping Method' => 'Rodzaj dostawy',
-	'Shipping Tracking Number' => 'Numer przesyłki',
-	'Asset Name' => 'Nazwa produktu serwisowego',
-	'Customer Name' => 'Nazwa Kontrahenta',
+	'Invoice Name' => 'Numer faktury',
+	'Shipping Method' => 'Forma dostawy',
+	'Shipping Tracking Number' => 'Numer listu przewozowego',
+	'Asset Name' => 'Nazwa produktu klienta',
+	'Customer Name' => 'Kontrahent',
 	'Notes' => 'Opis',
-	
+
 	/*picklist values*/
 	'In Service'=>'W serwisie',
-	'Out-of-service'=>'Serwis zakończony',
+	'Out-of-service'=>'Zakończono wsparcie',
 );

@@ -8,19 +8,34 @@
  * All Rights Reserved.
  *************************************************************************************/
 $languageStrings = array(
+	'SINGLE_Emails' => 'Mail',
+	'Emails' => 'Maile',
 	'LBL_SELECT_EMAIL_IDS' => 'Zaznacz adresy mailowe',
 	'LBL_SUBJECT' => 'Temat',
 	'LBL_ATTACHMENT' => 'Załącznik',
-	'LBL_BROWSE_CRM' => 'Przeglądaj dokumenty w CRM',
-	'LBL_SEND' => 'Wyślij',
+	'LBL_BROWSE_CRM' => 'Przeglądaj CRM',
+	'LBL_SEND' => 'Wysłane',
 	'LBL_SAVE_AS_DRAFT' => 'Zapisz jako kopia robocza',
-	'LBL_SELECT_EMAIL_TEMPLATE' => 'Wybierz ',
-	'LBL_COMPOSE_EMAIL' => 'Utwórz wiadomość',
+	'LBL_GO_TO_PREVIEW' => 'Przejdź do podglądu',
+	'LBL_SELECT_EMAIL_TEMPLATE' => 'Zaznacz szablon mailowy',
+	'LBL_COMPOSE_EMAIL' => 'Napisz maila',
+	'LBL_TO' => 'Do',
  	'LBL_CC' => 'DW',
    	'LBL_BCC' => 'UDW',
    	'LBL_ADD_CC' => 'Dodaj do DW',
    	'LBL_ADD_BCC' => 'Dodaj do UDW',
-	'LBL_MAX_UPLOAD_SIZE' => 'Maksymalny rozmiar załącznika ',
-	'LBL_EXCEEDED' => 'przekroczony',
+	'LBL_MAX_UPLOAD_SIZE' => 'Maksymalny rozmiar pliku wynosi',
+	'LBL_EXCEEDED' => 'Przekroczono',
 	
+	//Button Names translation
+	'LBL_FORWARD' => 'Prześlij',
+	'LBL_PRINT' => 'Drukuj',
+	'LBL_DESCRIPTION' => 'Opis',
+	'LBL_FROM' => 'Od',
+	'LBL_INFO' => 'Info',
+	'LBL_DRAFTED_ON' => 'Sporządzono o',
+	'LBL_SENT_ON' => 'Wysłano o',
+	'LBL_OWNER' => 'Właściciel',
+	
+	'Date & Time Sent' => 'Data wysłania',
 );

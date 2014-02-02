@@ -145,17 +145,4 @@
 	</div>
 </form>
 
-<div id="progressIndicator" class="row-fluid main-container hide">
-	<div class="inner-container">
-		<div class="span12 inner-container">
-			<div class="row-fluid">
-				<div class="span12 welcome-div alignCenter">
-					<h3>{vtranslate('LBL_INSTALLATION_IN_PROGRESS','Install')}...</h3><br>
-					<img src="{'install_loading.gif'|vimage_path}"/>
-					<h6>{vtranslate('LBL_PLEASE_WAIT','Install')}.... </h6>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
 </div>

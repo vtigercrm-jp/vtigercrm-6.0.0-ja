@@ -11,12 +11,12 @@
  *  Version      : 6.0.0
  *  Created Date : 2013-05-10
  *  Author       : JPL TSolucio, S. L. Joe Bordes
- *  Last change  : 2013-05-10
+ *  Last change  : 2013-07-14
  *  Author       : JPL TSolucio, S. L. Joe Bordes
  *************************************************************************************/
 $languageStrings = array(
-	'LBL_IMPORT_MODULE' => 'Importar Módulo',
-	'LBL_VTIGER_EXTENSION_STORE' => 'Tienda de Extensiones Vtiger',
+	'LBL_IMPORT_MODULE_FROM_FILE' => 'Importar Módulo desde fichero',
+	'LBL_VTIGER_EXTENSION_STORE' => 'Tienda de Vtiger Apps',
 	'LBL_PUBLISHER' => 'Editor',
 	'LBL_LICENSE' => 'Licencia',
 	'LBL_PUBLISHED_ON' => 'Publicado el',
@@ -34,4 +34,24 @@ $languageStrings = array(
 	'LBL_FAILED' => 'Errónea',
 	'LBL_SUCCESSFULL' => 'Correcta',
 	'LBL_INSTALLATION_LOG' => 'Registro Instalación',
+	//Install From file labels
+	'LBL_VERIFY_IMPORT_DETAILS' => 'Verificar Detalles Importación',
+	'LBL_MODULE_NAME' => 'Nombre Módulo',
+	'LBL_REQ_VTIGER_VERSION' => 'Versión Vtiger',
+	'LBL_LICENSE_ACCEPT_AGREEMENT' => 'Acepto el acuerdo de licencia.',
+	'LBL_EXISTS'=>'Existe',
+	'LBL_PROCEED_WITH_IMPORT' => '¿Quieres seguir con la importación?',
+	'LBL_VERSION_NOT_SUPPORTED' => 'La versión del módulo no es compatible con la versión de vtiger crm',
+	'LBL_FINISH' => 'Finalizar',
+	'LBL_IMPORT_ZIP' => 'Instalar desde fichero',
+	'LBL_IMPORT_MODULE' => 'Instalar desde Vtiger',
+	'LBL_NOT_FOUND' => 'No se ha podido encontrar ninguna Extensión/Módulo para la Versión Actual',
+	'LBL_INVALID_IMPORT_TRY_AGAIN' => ' dado para la importación del módulo! Inténtalo de nuevo.',
+	'LBL_IMPORTED_MODULE' => ' ha sido importado correctamente.',
+	'LBL__IMPORTING_MODULE' => 'Importando Módulo',
+
+	'LBL_UPDATE_MODULE_FROM_FILE' => 'Actualizar Módulo',
+	'LBL_UPDATED_MODULE' => ' módulo ha sido actualizado correctamente.',
+	'LBL__UPDATING_MODULE' => 'Actualizando Módulo',
+
 );

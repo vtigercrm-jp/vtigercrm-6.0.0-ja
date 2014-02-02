@@ -10,38 +10,47 @@
 $languageStrings = array(
 	//DetailView Actions
 	'SINGLE_SalesOrder' => 'Zamówienie od Klienta',
-	'LBL_EXPORT_TO_PDF' => 'Eksport do PDF',
+	'LBL_EXPORT_TO_PDF' => 'Generuj do PDF',
+    'LBL_SEND_MAIL_PDF' => 'Wyślij w mailu PDF',
 
 	//Basic strings
-	'LBL_ADD_RECORD' => 'Dodaj zamówienie od Klienta',
-	'LBL_RECORDS_LIST' => 'Lista zamówień od Klientów',
-	'LBL_RECORD_SUMMARY' => 'Podsumowanie zamówienia od Klienta',
+	'LBL_ADD_RECORD' => 'Dodaj rekord',
+	'LBL_RECORDS_LIST' => 'Lista rekordów',
 
 	// Blocks
-	'LBL_SO_INFORMATION' => 'Szczegóły zamówienia od Klienta',
-	
+	'LBL_SO_INFORMATION' => 'Szczegóły zamówienia',
+
 	//Field labels
-	'SalesOrder No'=>'Numer zamówienia od Klienta',
+	'SalesOrder No'=>'Numer',
 	'Quote Name'=>'Oferta',
-	'Customer No' => 'Numer Kontrahenta',
-	'Requisition No'=>'Numer rezerwacji',
-	'Tracking Number'=>'Numer przesyłki',
-	'Sales Commission' => 'Marża ze sprzedaży',
-	'Purchase Order'=>'Zamówienie do Dostawcy',
-	'Vendor Terms'=>'Warunki zamówienia do Dostawcy',
-	'Pending'=>'Oczekujące',
-	'Enable Recurring' => 'Włącz automatyczne fakturowanie',
+	'Customer No' => 'Numer kontrahenta',
+	'Requisition No'=>'Nr zapotrzebowania',
+	'Tracking Number'=>'Numer listu przewozowego',
+	'Sales Commission' => 'Prowizja od sprzedaży',
+	'Purchase Order'=>'Zamówienie do dostawcy',
+	'Vendor Terms'=>'Warunki dostawcy',
+	'Pending'=>'Oczekuje',
+	'Enable Recurring' => 'Włącz automatyczne generowanie faktury',
 	'Frequency' => 'Częstotliwość',
 	'Start Period' => 'Data rozpoczęcia',
 	'End Period' => 'Data zakończenia',
-	'Payment Duration' => 'Okres płatności',
-	'Invoice Status' => 'Status faktury',
-	
+	'Payment Duration' => 'Termin płatności',
+	'Invoice Status' => 'Status tworzonej faktury',
+
 	//Added for existing Picklist Entries
 
-	'Sub Total'=>'Podsumowanie',
-	'AutoCreated'=>'Utworzona automatycznie',
+	'Sub Total'=>'Brutto',
+	'AutoCreated'=>'Automatycznie utworzona',
 	'Sent'=>'Wysłana',
 	'Credit Invoice'=>'Faktura kredytowa',
 	'Paid'=>'Zapłacona',
+	
+	//Translation for product not found
+	'LBL_THIS' => 'Ten',
+	'LBL_IS_DELETED_FROM_THE_SYSTEM_PLEASE_REMOVE_OR_REPLACE_THIS_ITEM' => 'ten produkt/usługa został/a usunięta, spróbuj zastąpić ją innym produktem/usługą',
+	'LBL_THIS_LINE_ITEM_IS_DELETED_FROM_THE_SYSTEM_PLEASE_REMOVE_THIS_LINE_ITEM' => 'Ta linia została usunięta w systemie, usuń ją z rekordu.',
+);
+
+$jsLanguageStrings = array(
+	'JS_PLEASE_REMOVE_LINE_ITEM_THAT_IS_DELETED' => 'Usuń linię, której produkt/usługa został/a usunięty/a z/w systemie.',
 );

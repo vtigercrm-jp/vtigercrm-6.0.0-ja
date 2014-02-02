@@ -21,7 +21,7 @@ class Users_UserSetupSave_Action extends Users_Save_Action {
 		$userPreferenceData['time_zone'] = $request->get('time_zone');
 		$userPreferenceData['date_format'] = $request->get('date_format');
 		if (!empty($userPreferenceData)) {
-			$userModuleModel->saveUserPreferences($userPreferenceData);
+			$userRecordModel->saveUserPreferences($userPreferenceData);
 		}
 		//End
 		

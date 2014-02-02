@@ -4,10 +4,10 @@
   <name>Spanish</name>
   <label>ES Spanish</label>
   <prefix>es_es</prefix>
-  <version>5.4.0</version>
+  <version>6.0.0</version>
   <dependencies>
-	  <vtiger_version>6.0.0rc</vtiger_version>
-	  <vtiger_max_version>rc.*</vtiger_max_version>
+	  <vtiger_version>6.0.0</vtiger_version>
+	  <vtiger_max_version>6.*</vtiger_max_version>
   </dependencies>
   <license>
    <inline><![CDATA[
@@ -19,7 +19,9 @@
  * the specific language governing rights and limitations under the License.
  ********************************************************************************
  *  Language     : Español es_es
- *  Version      : 5.4.0
+ *  Version      : 6.0.0
+ *  Author       : Joe Bordes JPL TSolucio, S. L. 6.0.0
+ *  Author       : Joe Bordes JPL TSolucio, S. L. 5.5.0
  *  Author       : Joe Bordes JPL TSolucio, S. L. 5.4.0
  *  Author       : Joe Bordes JPL TSolucio, S. L. 5.4.0RC
  *  Author       : Joe Bordes JPL TSolucio, S. L. 5.3.0GA

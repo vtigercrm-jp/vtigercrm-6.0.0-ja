@@ -119,8 +119,19 @@ jQuery.Class('Install_Index_Js', {}, {
 				alert('Please resolve the error before proceeding with the installation');
 				return false;
 			} else {
-				jQuery('#progressIndicator').show();
 				jQuery('form[name="step5"]').submit().hide();
+			}
+		});
+	},
+	
+	registerEventForStep6 : function() {
+		jQuery('input[name="step7"]').on('click', function() {
+			var industry = jQuery('select[name="industry"]').val();
+			if (industry.length < 1) {
+				alert('Please select appropriate industry option.');
+			} else {
+				jQuery('#progressIndicator').show();
+				jQuery('form[name="step6"]').submit().hide();
 			}
 		});
 	},
@@ -136,6 +147,7 @@ jQuery.Class('Install_Index_Js', {}, {
 		this.registerEventForStep3();
 		this.registerEventForStep4();
 		this.registerEventForStep5();
+		this.registerEventForStep6();
 	}
 });
 

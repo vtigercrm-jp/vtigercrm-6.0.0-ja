@@ -6,15 +6,18 @@
  * The Initial Developer of the Original Code is vtiger.
  * Portions created by vtiger are Copyright (C) vtiger.
  * All Rights Reserved.
+ * Translated by ABOnline solutions - http://www.abo-s.com/
+ * Boris CLEMENT
+ * December 2013    
  ************************************************************************************/
 $languageStrings = array(
-	'SINGLE_SalesOrder'            => 'Bon de commande'             , 
+	'SINGLE_SalesOrder'            => 'Commande client'             , 
 	'LBL_EXPORT_TO_PDF'            => 'Export PDF'                  , 
-	'LBL_SEND_MAIL_PDF'            => 'Send Email with PDF'         , // TODO: Review
-	'LBL_ADD_RECORD'               => 'Add Sales Order'             , 
-	'LBL_RECORDS_LIST'             => 'Liste'                       , 
-	'LBL_SO_INFORMATION'           => 'Détail bon de commande'     , 
-	'SalesOrder No'                => 'Bon de commande N°'         , 
+	'LBL_SEND_MAIL_PDF'            => 'Envoi PDF par Email'         , 
+	'LBL_ADD_RECORD'               => 'Ajouter Commande client'             , 
+	'LBL_RECORDS_LIST'             => 'Liste des Commande client'                       , 
+	'LBL_SO_INFORMATION'           => 'Détail Commande client'     , 
+	'SalesOrder No'                => 'Commande client N°'         , 
 	'Quote Name'                   => 'Devis'                       , 
 	'Customer No'                  => 'Ref client'                  , 
 	'Requisition No'               => 'Ref demande'                 , 

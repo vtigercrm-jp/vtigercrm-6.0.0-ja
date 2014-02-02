@@ -12,7 +12,7 @@
  *  Version      : 6.0.0
  *  Created Date : 2012-10-26
  *  Author       : JPL TSolucio, S. L. Joe Bordes
- *  Last change  : 2013-05-11
+ *  Last change  : 2013-07-14
  *  Author       : JPL TSolucio, S. L. Joe Bordes
  ************************************************************************************/
 $languageStrings = array(
@@ -24,7 +24,8 @@ $languageStrings = array(
 	'LBL_GROUP_MEMBERS' => 'Miembros Grupo',
 	'LBL_ADD_USERS_ROLES' => 'Añadir Usuarios, Roles...',
 	'LBL_ROLEANDSUBORDINATE' => 'Rol y Subordinados',
-	'RoleAndSubordinates' => 'Rol y Subordinados'
+	'RoleAndSubordinates' => 'Rol y Subordinados',
+	'LBL_DUPLICATES_EXIST' => 'Nombre de Grupo ya existe',
 );
 
 $jsLanguageStrings = array(

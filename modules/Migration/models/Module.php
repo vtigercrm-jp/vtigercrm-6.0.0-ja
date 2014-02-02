@@ -27,7 +27,8 @@ class Migration_Module_Model extends Vtiger_Module_Model {
 	
 	public function getAllowedMigrationVersions(){
 		$versions = array(
-			'540' => '5.4.0',
+			array('540'   => '5.4.0'),
+			array('600RC' => '6.0.0 RC')
 		);
 		return $versions;
 	}
