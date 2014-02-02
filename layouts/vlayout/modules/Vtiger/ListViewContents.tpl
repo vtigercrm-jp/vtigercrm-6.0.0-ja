@@ -118,7 +118,13 @@
 			<tr>
 				<td>
 					{assign var=SINGLE_MODULE value="SINGLE_$MODULE"}
+					{* JFV - remove LBL_NO for ja_jp *}
+					{if $smarty.session.authenticated_user_language eq 'ja_jp'}
+					{vtranslate($MODULE, $MODULE)} {vtranslate('LBL_FOUND')}.<br>{if $IS_MODULE_EDITABLE} <a href="{$MODULE_MODEL->getCreateRecordUrl()}">{vtranslate($SINGLE_MODULE, $MODULE)}を作成する</a>{/if}
+					{else}
 					{vtranslate('LBL_NO')} {vtranslate($MODULE, $MODULE)} {vtranslate('LBL_FOUND')}.{if $IS_MODULE_EDITABLE} {vtranslate('LBL_CREATE')} <a href="{$MODULE_MODEL->getCreateRecordUrl()}">{vtranslate($SINGLE_MODULE, $MODULE)}</a>{/if}
+					{/if}
+					{* JFV END *}
 				</td>
 			</tr>
 		</tbody>

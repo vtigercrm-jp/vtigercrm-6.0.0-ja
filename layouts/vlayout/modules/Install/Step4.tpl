@@ -72,7 +72,13 @@
 							<tr><td>{vtranslate('LBL_CURRENCIES','Install')}<span class="no">*</span></td>
 								<td><select name="currency_name" class="select2" style="width:220px;">
 										{foreach key=CURRENCY_NAME item=CURRENCY_INFO from=$CURRENCIES}
+											{* JFV - change default currency selection based on ui language *}
+											{if $JFV_DEFAULT_LANGUAGE eq 'ja_jp'}
+												<option value="{$CURRENCY_NAME}" {if $CURRENCY_NAME eq 'Japan, Yen'} selected {/if}>{$CURRENCY_NAME} ({$CURRENCY_INFO.1})</option>
+											{else}
 											<option value="{$CURRENCY_NAME}" {if $CURRENCY_NAME eq 'USA, Dollars'} selected {/if}>{$CURRENCY_NAME} ({$CURRENCY_INFO.1})</option>
+											{/if}
+											{* JFV END *}
 										{/foreach}
 									</select>
 								</td>
@@ -116,7 +122,13 @@
 								<td><select class="select2" style="width:220px;" name="dateformat">
 										<option> mm-dd-yyyy</option>
 										<option> dd-mm-yyyy</option>
+										{* JFV - change default day format selection based on ui language *} 
+										{if $JFV_DEFAULT_LANGUAGE eq 'ja_jp'}
+											<option selected> yyyy-mm-dd</option>
+										{else}
 										<option> yyyy-mm-dd</option>
+										{/if}
+										{* JFV END *}
 									</select>
 								</td>
 							</tr>
@@ -126,7 +138,13 @@
 								</td>
 								<td><select class="select2" name="timezone">
 									{foreach item=TIMEZONE from=$TIMEZONES}
+										{* JFV - change default timezone selection based on ui language *} 
+										{if $JFV_DEFAULT_LANGUAGE eq 'ja_jp'}
+											<option value="{$TIMEZONE}" {if $TIMEZONE eq 'Asia/Tokyo'}selected{/if}>{vtranslate($TIMEZONE, 'Users')}</option>
+										{else}
 										<option value="{$TIMEZONE}" {if $TIMEZONE eq 'America/Los_Angeles'}selected{/if}>{vtranslate($TIMEZONE, 'Users')}</option>
+										{/if}
+										{* JFV END *}
 									{/foreach}
 									</select>
 								</td>

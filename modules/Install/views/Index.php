@@ -41,7 +41,11 @@ class Install_Index_view extends Vtiger_View_Controller {
 		parent::preProcess($request);
 		$viewer = $this->getViewer($request);
 		$moduleName = $request->getModule();
-		$defaultLanguage = ($request->get('lang'))?$request->get('lang'):'en_us';
+		// JFV - change installation langauge to jp
+		//$defaultLanguage = ($request->get('lang'))?$request->get('lang'):'en_us';
+		$jfv_languageForInstallation = 'ja_jp';
+		$defaultLanguage = ($request->get('lang'))?$request->get('lang'):$jfv_languageForInstallation;
+		// JFV END
 		vglobal('default_language', $defaultLanguage);
 
 		define('INSTALLATION_MODE', true);
@@ -93,6 +97,9 @@ class Install_Index_view extends Vtiger_View_Controller {
 		require_once 'modules/Users/UserTimeZonesArray.php';
 		$timeZone = new UserTimeZones();
 		$viewer->assign('TIMEZONES', $timeZone->userTimeZones());
+		// JFV - pass default language to set default ui selection
+		$viewer->assign('JFV_DEFAULT_LANGUAGE', vglobal('default_language'));
+		// JFV END
 
 		$defaultParameters = Install_Utils_Model::getDefaultPreInstallParameters();		
 		$viewer->assign('DB_HOSTNAME', $defaultParameters['db_hostname']);
