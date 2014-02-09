@@ -292,6 +292,20 @@ jQuery.Class("Calendar_CalendarView_Js",{
 			
 			dayClick : function(date, allDay, jsEvent, view){thisInstance.dayClick(date, allDay, jsEvent, view);}
 		}
+		// JFV - use YYYY MM DD date format for east asian countries
+		if( $.inArray(jQuery('body').data('language').toLowerCase(),["ja_jp","zh_cn","zh_tw","zh_hk"]) >= 0 ){
+			config['titleFormat'] = {
+					month: 'yyyy 年 MMMM',
+					week: "yyyy 年 MMM d 日{ '～'[ yyyy 年][ MMM] d 日}",
+					day: 'yyyy 年 MMM d 日 （ddd）'
+				};
+			config['columnFormat'] = {
+					month: 'ddd',
+					week: 'M/d （ddd）',
+					day: 'M/d dddd'
+				};
+		}
+		// JFV END
 		if(typeof customConfig != 'undefined'){
 			config = jQuery.extend(config,customConfig);
 		}
