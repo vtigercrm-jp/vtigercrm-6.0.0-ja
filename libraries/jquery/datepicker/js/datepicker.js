@@ -164,6 +164,11 @@
 					switch (tblCal[0].className) {
 						case 'datepickerViewDays':
 							dow = formatDate(date, 'B, Y');
+							// JFV - use YYYY MM date format for east asian countries
+							if( $.inArray(jQuery('body').data('language').toLowerCase(),["ja_jp","zh_cn","zh_tw","zh_hk"]) >= 0 ){
+								dow = formatDate(date, 'Y年 n月');
+							}
+							// JFV END
 							break;
 						case 'datepickerViewMonths':
 							dow = date.getFullYear();
@@ -343,6 +348,11 @@
 						case 'm':
 							part = (m < 9) ? ("0" + (1+m)) : (1+m);
 							break;
+						// JFV - add date format parameter for month without leading zero
+						case 'n':
+							part = 1+m;
+							break;
+						// JFV END
 						case 'M':
 							part = (min < 10) ? ("0" + min) : min;
 							break;
