@@ -256,11 +256,18 @@ class Vtiger_InventoryPDFController {
 			$resultrow = $adb->fetch_array($result);
 
 			$addressValues = array();
-			$addressValues[] = $resultrow['address'];
-			if(!empty($resultrow['city'])) $addressValues[]= "\n".$resultrow['city'];
-			if(!empty($resultrow['state'])) $addressValues[]= ",".$resultrow['state'];
-			if(!empty($resultrow['code'])) $addressValues[]= $resultrow['code'];
+			// JFV - change pdf address display order
+			//$addressValues[] = $resultrow['address'];
+			//if(!empty($resultrow['city'])) $addressValues[]= "\n".$resultrow['city'];
+			//if(!empty($resultrow['state'])) $addressValues[]= ",".$resultrow['state'];
+			//if(!empty($resultrow['code'])) $addressValues[]= $resultrow['code'];
+			//if(!empty($resultrow['country'])) $addressValues[]= "\n".$resultrow['country'];
 			if(!empty($resultrow['country'])) $addressValues[]= "\n".$resultrow['country'];
+			if(!empty($resultrow['code'])) $addressValues[]= $resultrow['code'];
+			if(!empty($resultrow['state'])) $addressValues[]= "".$resultrow['state'];
+			if(!empty($resultrow['city'])) $addressValues[]= "\n".$resultrow['city'];
+			$addressValues[] = $resultrow['address'];
+			// JFV END
 
 
 			if(!empty($resultrow['phone']))		$additionalCompanyInfo[]= "\n".getTranslatedString("Phone: ", $this->moduleName). $resultrow['phone'];
@@ -343,9 +350,14 @@ class Vtiger_InventoryPDFController {
 		$billState	= $this->focusColumnValues(array('bill_state'));
 		$billCountry = $this->focusColumnValues(array('bill_country'));
 		$billCode	=  $this->focusColumnValues(array('bill_code'));
-		$address	= $this->joinValues(array($billPoBox, $billStreet), ' ');
-		$address .= "\n".$this->joinValues(array($billCity, $billState), ',')." ".$billCode;
-		$address .= "\n".$billCountry;
+		// JFV - change pdf address display order
+		//$address	= $this->joinValues(array($billPoBox, $billStreet), ' ');
+		//$address .= "\n".$this->joinValues(array($billCity, $billState), ',')." ".$billCode;
+		//$address .= "\n".$billCountry;
+		$address  = $billCountry." ".$billCode;
+		$address .= "\n".$this->joinValues(array($billState, $billCity, ), ' ');
+		$address .= "\n".$this->joinValues(array($billPoBox, $billStreet), ' ');
+		// JFV END
 		return $address;
 	}
 
@@ -356,9 +368,14 @@ class Vtiger_InventoryPDFController {
 		$shipState	= $this->focusColumnValues(array('ship_state'));
 		$shipCountry = $this->focusColumnValues(array('ship_country'));
 		$shipCode	=  $this->focusColumnValues(array('ship_code'));
-		$address	= $this->joinValues(array($shipPoBox, $shipStreet), ' ');
-		$address .= "\n".$this->joinValues(array($shipCity, $shipState), ',')." ".$shipCode;
-		$address .= "\n".$shipCountry;
+		// JFV - change pdf address display order
+		//$address	= $this->joinValues(array($shipPoBox, $shipStreet), ' ');
+		//$address .= "\n".$this->joinValues(array($shipCity, $shipState), ',')." ".$shipCode;
+		//$address .= "\n".$shipCountry;
+		$address  = $shipCountry." ".$shipCode;
+		$address .= "\n".$this->joinValues(array($shipState, $shipCity, ), ' ');
+		$address .= "\n".$this->joinValues(array($shipPoBox, $shipStreet), ' ');
+		// JFV END
 		return $address;
 	}
 
